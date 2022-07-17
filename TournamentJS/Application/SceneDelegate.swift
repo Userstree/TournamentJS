@@ -8,19 +8,31 @@
 import UIKit
 
 class SceneDelegate: UIResponder, UIWindowSceneDelegate {
-
     var window: UIWindow?
+    var rootController: UINavigationController!
 
+    private lazy var applicationCoordinator: Coordinator = self.makeCoordinator()
 
     func scene(_ scene: UIScene, willConnectTo session: UISceneSession, options connectionOptions: UIScene.ConnectionOptions) {
         guard let windowScene = (scene as? UIWindowScene) else {
             return
         }
         let window = UIWindow(windowScene: windowScene)
-        let factory: FactoryProtocol = Factory()
-        window.rootViewController = UINavigationController(rootViewController: factory.make())
+        let rootController = UINavigationController()
+        window.rootViewController = rootController
+        self.rootController = rootController
         window.makeKeyAndVisible()
         self.window = window
+//        let notification = connectionOptions.notificationResponse as? [String: Any]
+//        let deepLink = DeepLinkOption.build(with: notification)
+        applicationCoordinator.start(with: .onboarding)
+    }
+
+    private func makeCoordinator() -> Coordinator {
+        ApplicationCoordinator(
+                router: RouterImp(rootController: rootController),
+                coordinatorFactory: CoordinatorFactoryImp()
+        )
     }
 
     func sceneDidDisconnect(_ scene: UIScene) {

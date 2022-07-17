@@ -6,6 +6,6 @@ target 'TournamentJS' do
   use_frameworks!
 
   # Pods for OffIce
-  pod 'lottie-ios'
+  pod 'paper-onboarding'
   pod 'SnapKit', '~> 5.6.0'
 end

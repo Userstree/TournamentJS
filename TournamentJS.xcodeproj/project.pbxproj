@@ -9,17 +9,32 @@
 /* Begin PBXBuildFile section */
 		0525CDB32864B609007A6C95 /* UIStackView+ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0525CDB22864B609007A6C95 /* UIStackView+ext.swift */; };
 		05A545822864B4140089FABB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 05A545802864B4140089FABB /* LaunchScreen.storyboard */; };
-		05A5459A2864B4D50089FABB /* PopoverCoordinating.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05A5458B2864B4D50089FABB /* PopoverCoordinating.swift */; };
-		05A5459B2864B4D50089FABB /* Sharing.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05A5458C2864B4D50089FABB /* Sharing.swift */; };
-		05A5459C2864B4D50089FABB /* EntryCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05A5458D2864B4D50089FABB /* EntryCoordinator.swift */; };
-		05A5459D2864B4D50089FABB /* Coordinating.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05A5458F2864B4D50089FABB /* Coordinating.swift */; };
-		05A5459E2864B4D50089FABB /* Page.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05A545912864B4D50089FABB /* Page.swift */; };
-		05A5459F2864B4D50089FABB /* EntryPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05A545942864B4D50089FABB /* EntryPageViewController.swift */; };
-		05A545A02864B4D50089FABB /* OnboardCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05A545962864B4D50089FABB /* OnboardCollectionViewCell.swift */; };
-		05A545A12864B4D50089FABB /* AnimationsStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05A545972864B4D50089FABB /* AnimationsStore.swift */; };
-		05A545A22864B4D50089FABB /* OnboardDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05A545982864B4D50089FABB /* OnboardDataSource.swift */; };
-		05A545A32864B4D50089FABB /* Factory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05A545992864B4D50089FABB /* Factory.swift */; };
 		3CB0CCBD1D42789450B865E2 /* Pods_TournamentJS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BF1332EBAF0E0C0BEB69AC5C /* Pods_TournamentJS.framework */; };
+		615B408220DF1A7F43DCD379 /* ApplicationCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 615B4F759B74025A03F6142A /* ApplicationCoordinator.swift */; };
+		615B41AA4F20F695D3A54030 /* OnboardingCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 615B4445B32F5D0922403730 /* OnboardingCoordinator.swift */; };
+		615B41BED9C0499665FB2034 /* RouterImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 615B4C594C0A47092216FF69 /* RouterImpl.swift */; };
+		615B42CF6C74A066FD919005 /* OnboardingModuleFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 615B4B81E079A154F5E3F876 /* OnboardingModuleFactory.swift */; };
+		615B43756262A4200F2CBA4E /* AuthModuleFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 615B4249785D202865F45DD0 /* AuthModuleFactory.swift */; };
+		615B4399ECA2F245134A2A68 /* AuthCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 615B47708D4DF491F5EBE5FB /* AuthCoordinator.swift */; };
+		615B43A7A422B527ABAB101C /* Presentable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 615B464DACB07F04CDFFFDDE /* Presentable.swift */; };
+		615B43D037DFD7686E5C1DF5 /* MaterialColors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 615B44E546DE919AF6A030C1 /* MaterialColors.swift */; };
+		615B44910C719674E5944488 /* LoginController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 615B4ACF4157E44052B6BA80 /* LoginController.swift */; };
+		615B454432D32DC340A0AFDD /* CoordinatorFactoryImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 615B4F9C5F4D1E11C97AE44A /* CoordinatorFactoryImpl.swift */; };
+		615B468184E708A86134E088 /* DeepLinkOption.swift in Sources */ = {isa = PBXBuildFile; fileRef = 615B42FEDF78006557D356D6 /* DeepLinkOption.swift */; };
+		615B46EEB3A55A726A24FAEB /* SignUpView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 615B40E05C9293EA1BCDF79C /* SignUpView.swift */; };
+		615B472A97109D55AF999FC4 /* CoordinatorFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 615B41B6A9E2F3774CCD75A0 /* CoordinatorFactory.swift */; };
+		615B48A0A0C0EC189988A677 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 615B4A268B53D786079E02C7 /* LoginView.swift */; };
+		615B48E5D21E9687DE9F701B /* BaseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 615B4FB45583E55A36EA18AB /* BaseView.swift */; };
+		615B497013E179BAAE83FAC1 /* SignUpController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 615B4F65CA36C95CEF43E6BA /* SignUpController.swift */; };
+		615B49BF65AE8999D2342570 /* OnboardingCoordinatorOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 615B46484484E47F3A2DF22C /* OnboardingCoordinatorOutput.swift */; };
+		615B4A037B60668B5503DE40 /* OnboardingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 615B411252A6264915D7AC98 /* OnboardingView.swift */; };
+		615B4A5720A346B4CB46EF8E /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 615B478013E00EC336279194 /* Coordinator.swift */; };
+		615B4A82586250D4E54151D2 /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = 615B4B632102BD1547F4743B /* Router.swift */; };
+		615B4C310993C48969F40A10 /* OnboardingController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 615B4C991F2512E0BB31DCB2 /* OnboardingController.swift */; };
+		615B4C5494692926E6A56B1A /* BaseCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 615B4160097D6835854C7BCA /* BaseCoordinator.swift */; };
+		615B4D9E5035EFC1DC868830 /* ModuleFactoryImp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 615B4594A28232FB790C0055 /* ModuleFactoryImp.swift */; };
+		615B4E2549762FDF0F50890A /* UIViewController+ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 615B43664D9AF810A3A7AD77 /* UIViewController+ext.swift */; };
+		615B4FFDCAFED95D503BB707 /* AuthCoordinatorOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 615B4EFF10BB70D4265F020F /* AuthCoordinatorOutput.swift */; };
 		F88431A459EE8B24A650D5FF /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F884391A0C34184313162B1D /* SceneDelegate.swift */; };
 		F884353CE924CAEFAED68FE8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F88431E3D853B2B7F4106137 /* Assets.xcassets */; };
 		F884369608DBEC822F233356 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8843F486748C463CB59F0D5 /* AppDelegate.swift */; };
@@ -29,18 +44,34 @@
 		0525CDB22864B609007A6C95 /* UIStackView+ext.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIStackView+ext.swift"; sourceTree = "<group>"; };
 		05A545722864B4140089FABB /* TournamentJS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TournamentJS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		05A545812864B4140089FABB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		05A5458B2864B4D50089FABB /* PopoverCoordinating.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PopoverCoordinating.swift; sourceTree = "<group>"; };
-		05A5458C2864B4D50089FABB /* Sharing.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Sharing.swift; sourceTree = "<group>"; };
-		05A5458D2864B4D50089FABB /* EntryCoordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EntryCoordinator.swift; sourceTree = "<group>"; };
-		05A5458F2864B4D50089FABB /* Coordinating.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Coordinating.swift; sourceTree = "<group>"; };
-		05A545912864B4D50089FABB /* Page.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Page.swift; sourceTree = "<group>"; };
-		05A545942864B4D50089FABB /* EntryPageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EntryPageViewController.swift; sourceTree = "<group>"; };
-		05A545962864B4D50089FABB /* OnboardCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OnboardCollectionViewCell.swift; sourceTree = "<group>"; };
-		05A545972864B4D50089FABB /* AnimationsStore.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnimationsStore.swift; sourceTree = "<group>"; };
-		05A545982864B4D50089FABB /* OnboardDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OnboardDataSource.swift; sourceTree = "<group>"; };
-		05A545992864B4D50089FABB /* Factory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Factory.swift; sourceTree = "<group>"; };
 		5F8B225B79CA0D658D01542E /* Pods-TournamentJS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TournamentJS.debug.xcconfig"; path = "Target Support Files/Pods-TournamentJS/Pods-TournamentJS.debug.xcconfig"; sourceTree = "<group>"; };
+		615B40E05C9293EA1BCDF79C /* SignUpView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignUpView.swift; sourceTree = "<group>"; };
+		615B411252A6264915D7AC98 /* OnboardingView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OnboardingView.swift; sourceTree = "<group>"; };
+		615B4160097D6835854C7BCA /* BaseCoordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseCoordinator.swift; sourceTree = "<group>"; };
+		615B41B6A9E2F3774CCD75A0 /* CoordinatorFactory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoordinatorFactory.swift; sourceTree = "<group>"; };
+		615B4249785D202865F45DD0 /* AuthModuleFactory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthModuleFactory.swift; sourceTree = "<group>"; };
+		615B42FEDF78006557D356D6 /* DeepLinkOption.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DeepLinkOption.swift; sourceTree = "<group>"; };
+		615B43664D9AF810A3A7AD77 /* UIViewController+ext.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIViewController+ext.swift"; sourceTree = "<group>"; };
+		615B4445B32F5D0922403730 /* OnboardingCoordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OnboardingCoordinator.swift; sourceTree = "<group>"; };
+		615B44E546DE919AF6A030C1 /* MaterialColors.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MaterialColors.swift; sourceTree = "<group>"; };
+		615B4594A28232FB790C0055 /* ModuleFactoryImp.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ModuleFactoryImp.swift; sourceTree = "<group>"; };
+		615B46484484E47F3A2DF22C /* OnboardingCoordinatorOutput.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OnboardingCoordinatorOutput.swift; sourceTree = "<group>"; };
+		615B464DACB07F04CDFFFDDE /* Presentable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Presentable.swift; sourceTree = "<group>"; };
+		615B47708D4DF491F5EBE5FB /* AuthCoordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthCoordinator.swift; sourceTree = "<group>"; };
+		615B478013E00EC336279194 /* Coordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
+		615B4A268B53D786079E02C7 /* LoginView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		615B4ACF4157E44052B6BA80 /* LoginController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginController.swift; sourceTree = "<group>"; };
+		615B4B632102BD1547F4743B /* Router.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Router.swift; sourceTree = "<group>"; };
+		615B4B81E079A154F5E3F876 /* OnboardingModuleFactory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OnboardingModuleFactory.swift; sourceTree = "<group>"; };
+		615B4C594C0A47092216FF69 /* RouterImpl.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RouterImpl.swift; sourceTree = "<group>"; };
+		615B4C991F2512E0BB31DCB2 /* OnboardingController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OnboardingController.swift; sourceTree = "<group>"; };
+		615B4EFF10BB70D4265F020F /* AuthCoordinatorOutput.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthCoordinatorOutput.swift; sourceTree = "<group>"; };
+		615B4F65CA36C95CEF43E6BA /* SignUpController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignUpController.swift; sourceTree = "<group>"; };
+		615B4F759B74025A03F6142A /* ApplicationCoordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ApplicationCoordinator.swift; sourceTree = "<group>"; };
+		615B4F9C5F4D1E11C97AE44A /* CoordinatorFactoryImpl.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoordinatorFactoryImpl.swift; sourceTree = "<group>"; };
+		615B4FB45583E55A36EA18AB /* BaseView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseView.swift; sourceTree = "<group>"; };
 		BF1332EBAF0E0C0BEB69AC5C /* Pods_TournamentJS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TournamentJS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C2F73F9F2882D095004CD077 /* TournamentJS-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "TournamentJS-Bridging-Header.h"; path = "TournamentJS/Sopporting Files/TournamentJS-Bridging-Header.h"; sourceTree = SOURCE_ROOT; };
 		F88431E3D853B2B7F4106137 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F884391A0C34184313162B1D /* SceneDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		F8843F486748C463CB59F0D5 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -64,6 +95,7 @@
 			isa = PBXGroup;
 			children = (
 				0525CDB22864B609007A6C95 /* UIStackView+ext.swift */,
+				615B43664D9AF810A3A7AD77 /* UIViewController+ext.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -90,77 +122,16 @@
 			isa = PBXGroup;
 			children = (
 				0525CDB12864B609007A6C95 /* Extensions */,
-				05A545892864B4D50089FABB /* Scenes */,
 				05A545802864B4140089FABB /* LaunchScreen.storyboard */,
 				F884386EC6B132BDCC50B6CC /* Sopporting Files */,
 				F88431BA20A0BA0F7E9E6246 /* Application */,
+				615B4605F12DEFB7F9044302 /* Coordinator */,
+				615B45C92D000F7DFA581A5F /* Factories */,
+				615B44A2D37D9AC12203943A /* Flows */,
+				615B483111822F0D5191CA65 /* Router */,
+				615B45A8D6DBBD3EA09F393F /* Resources */,
 			);
 			path = TournamentJS;
-			sourceTree = "<group>";
-		};
-		05A545892864B4D50089FABB /* Scenes */ = {
-			isa = PBXGroup;
-			children = (
-				05A5458A2864B4D50089FABB /* Coordinator */,
-				05A545902864B4D50089FABB /* Models */,
-				05A545922864B4D50089FABB /* ViewControllers */,
-				05A545992864B4D50089FABB /* Factory.swift */,
-			);
-			path = Scenes;
-			sourceTree = "<group>";
-		};
-		05A5458A2864B4D50089FABB /* Coordinator */ = {
-			isa = PBXGroup;
-			children = (
-				05A5458B2864B4D50089FABB /* PopoverCoordinating.swift */,
-				05A5458C2864B4D50089FABB /* Sharing.swift */,
-				05A5458D2864B4D50089FABB /* EntryCoordinator.swift */,
-				05A5458E2864B4D50089FABB /* Protocols */,
-			);
-			path = Coordinator;
-			sourceTree = "<group>";
-		};
-		05A5458E2864B4D50089FABB /* Protocols */ = {
-			isa = PBXGroup;
-			children = (
-				05A5458F2864B4D50089FABB /* Coordinating.swift */,
-			);
-			path = Protocols;
-			sourceTree = "<group>";
-		};
-		05A545902864B4D50089FABB /* Models */ = {
-			isa = PBXGroup;
-			children = (
-				05A545912864B4D50089FABB /* Page.swift */,
-			);
-			path = Models;
-			sourceTree = "<group>";
-		};
-		05A545922864B4D50089FABB /* ViewControllers */ = {
-			isa = PBXGroup;
-			children = (
-				05A545932864B4D50089FABB /* EntryScene */,
-			);
-			path = ViewControllers;
-			sourceTree = "<group>";
-		};
-		05A545932864B4D50089FABB /* EntryScene */ = {
-			isa = PBXGroup;
-			children = (
-				05A545942864B4D50089FABB /* EntryPageViewController.swift */,
-				05A545952864B4D50089FABB /* CollectionViewDatasource */,
-			);
-			path = EntryScene;
-			sourceTree = "<group>";
-		};
-		05A545952864B4D50089FABB /* CollectionViewDatasource */ = {
-			isa = PBXGroup;
-			children = (
-				05A545962864B4D50089FABB /* OnboardCollectionViewCell.swift */,
-				05A545972864B4D50089FABB /* AnimationsStore.swift */,
-				05A545982864B4D50089FABB /* OnboardDataSource.swift */,
-			);
-			path = CollectionViewDatasource;
 			sourceTree = "<group>";
 		};
 		4F461154C419475C75B791B1 /* Frameworks */ = {
@@ -169,6 +140,144 @@
 				BF1332EBAF0E0C0BEB69AC5C /* Pods_TournamentJS.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		615B4211FFBEEACDC27C95C7 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				615B4E0C999373F372F163E2 /* Login */,
+				615B4FADA696D40AF6E025AC /* SignUp */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		615B421343DFB1CD2DA6303A /* OnboardingFlow */ = {
+			isa = PBXGroup;
+			children = (
+				615B45FE06E052F06ECF7DC9 /* Controllers */,
+				615B4445B32F5D0922403730 /* OnboardingCoordinator.swift */,
+				615B46484484E47F3A2DF22C /* OnboardingCoordinatorOutput.swift */,
+			);
+			path = OnboardingFlow;
+			sourceTree = "<group>";
+		};
+		615B44A2D37D9AC12203943A /* Flows */ = {
+			isa = PBXGroup;
+			children = (
+				615B485A8971F572FFB7C915 /* LoginFlow */,
+				615B421343DFB1CD2DA6303A /* OnboardingFlow */,
+			);
+			path = Flows;
+			sourceTree = "<group>";
+		};
+		615B450D0EE96A857AD14702 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				615B4FB45583E55A36EA18AB /* BaseView.swift */,
+				615B464DACB07F04CDFFFDDE /* Presentable.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		615B45A8D6DBBD3EA09F393F /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				615B44E546DE919AF6A030C1 /* MaterialColors.swift */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		615B45C92D000F7DFA581A5F /* Factories */ = {
+			isa = PBXGroup;
+			children = (
+				615B4A4AE7EE0DE49ECAFDF1 /* MainFactory */,
+				615B4249785D202865F45DD0 /* AuthModuleFactory.swift */,
+				615B4B81E079A154F5E3F876 /* OnboardingModuleFactory.swift */,
+				615B48150E5F766932CFA0C5 /* Impl */,
+			);
+			path = Factories;
+			sourceTree = "<group>";
+		};
+		615B45FE06E052F06ECF7DC9 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				615B4C991F2512E0BB31DCB2 /* OnboardingController.swift */,
+				615B411252A6264915D7AC98 /* OnboardingView.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		615B4605F12DEFB7F9044302 /* Coordinator */ = {
+			isa = PBXGroup;
+			children = (
+				615B478013E00EC336279194 /* Coordinator.swift */,
+				615B42FEDF78006557D356D6 /* DeepLinkOption.swift */,
+				615B4E22A9B642DDD52F87D2 /* BaseCoordinator */,
+				615B450D0EE96A857AD14702 /* Protocols */,
+			);
+			path = Coordinator;
+			sourceTree = "<group>";
+		};
+		615B48150E5F766932CFA0C5 /* Impl */ = {
+			isa = PBXGroup;
+			children = (
+				615B4F9C5F4D1E11C97AE44A /* CoordinatorFactoryImpl.swift */,
+				615B4594A28232FB790C0055 /* ModuleFactoryImp.swift */,
+			);
+			path = Impl;
+			sourceTree = "<group>";
+		};
+		615B483111822F0D5191CA65 /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				615B4B632102BD1547F4743B /* Router.swift */,
+				615B4C594C0A47092216FF69 /* RouterImpl.swift */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		615B485A8971F572FFB7C915 /* LoginFlow */ = {
+			isa = PBXGroup;
+			children = (
+				615B4EFF10BB70D4265F020F /* AuthCoordinatorOutput.swift */,
+				615B4211FFBEEACDC27C95C7 /* Controllers */,
+				615B47708D4DF491F5EBE5FB /* AuthCoordinator.swift */,
+			);
+			path = LoginFlow;
+			sourceTree = "<group>";
+		};
+		615B4A4AE7EE0DE49ECAFDF1 /* MainFactory */ = {
+			isa = PBXGroup;
+			children = (
+				615B41B6A9E2F3774CCD75A0 /* CoordinatorFactory.swift */,
+			);
+			path = MainFactory;
+			sourceTree = "<group>";
+		};
+		615B4E0C999373F372F163E2 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				615B4ACF4157E44052B6BA80 /* LoginController.swift */,
+				615B4A268B53D786079E02C7 /* LoginView.swift */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		615B4E22A9B642DDD52F87D2 /* BaseCoordinator */ = {
+			isa = PBXGroup;
+			children = (
+				615B4160097D6835854C7BCA /* BaseCoordinator.swift */,
+			);
+			path = BaseCoordinator;
+			sourceTree = "<group>";
+		};
+		615B4FADA696D40AF6E025AC /* SignUp */ = {
+			isa = PBXGroup;
+			children = (
+				615B4F65CA36C95CEF43E6BA /* SignUpController.swift */,
+				615B40E05C9293EA1BCDF79C /* SignUpView.swift */,
+			);
+			path = SignUp;
 			sourceTree = "<group>";
 		};
 		B8105D618944D9795764E210 /* Pods */ = {
@@ -185,6 +294,7 @@
 			children = (
 				F8843F486748C463CB59F0D5 /* AppDelegate.swift */,
 				F884391A0C34184313162B1D /* SceneDelegate.swift */,
+				615B4F759B74025A03F6142A /* ApplicationCoordinator.swift */,
 			);
 			path = Application;
 			sourceTree = "<group>";
@@ -194,6 +304,7 @@
 			children = (
 				F8843F779A245E495C0FB417 /* Info.plist */,
 				F88431E3D853B2B7F4106137 /* Assets.xcassets */,
+				C2F73F9F2882D095004CD077 /* TournamentJS-Bridging-Header.h */,
 			);
 			path = "Sopporting Files";
 			sourceTree = "<group>";
@@ -312,19 +423,34 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				05A5459B2864B4D50089FABB /* Sharing.swift in Sources */,
-				05A545A22864B4D50089FABB /* OnboardDataSource.swift in Sources */,
-				05A5459A2864B4D50089FABB /* PopoverCoordinating.swift in Sources */,
-				05A5459C2864B4D50089FABB /* EntryCoordinator.swift in Sources */,
 				F884369608DBEC822F233356 /* AppDelegate.swift in Sources */,
-				05A545A02864B4D50089FABB /* OnboardCollectionViewCell.swift in Sources */,
-				05A5459E2864B4D50089FABB /* Page.swift in Sources */,
-				05A545A12864B4D50089FABB /* AnimationsStore.swift in Sources */,
 				0525CDB32864B609007A6C95 /* UIStackView+ext.swift in Sources */,
-				05A545A32864B4D50089FABB /* Factory.swift in Sources */,
-				05A5459D2864B4D50089FABB /* Coordinating.swift in Sources */,
-				05A5459F2864B4D50089FABB /* EntryPageViewController.swift in Sources */,
 				F88431A459EE8B24A650D5FF /* SceneDelegate.swift in Sources */,
+				615B4A5720A346B4CB46EF8E /* Coordinator.swift in Sources */,
+				615B468184E708A86134E088 /* DeepLinkOption.swift in Sources */,
+				615B4C5494692926E6A56B1A /* BaseCoordinator.swift in Sources */,
+				615B472A97109D55AF999FC4 /* CoordinatorFactory.swift in Sources */,
+				615B43756262A4200F2CBA4E /* AuthModuleFactory.swift in Sources */,
+				615B4FFDCAFED95D503BB707 /* AuthCoordinatorOutput.swift in Sources */,
+				615B4A82586250D4E54151D2 /* Router.swift in Sources */,
+				615B41BED9C0499665FB2034 /* RouterImpl.swift in Sources */,
+				615B42CF6C74A066FD919005 /* OnboardingModuleFactory.swift in Sources */,
+				615B44910C719674E5944488 /* LoginController.swift in Sources */,
+				615B48A0A0C0EC189988A677 /* LoginView.swift in Sources */,
+				615B4399ECA2F245134A2A68 /* AuthCoordinator.swift in Sources */,
+				615B497013E179BAAE83FAC1 /* SignUpController.swift in Sources */,
+				615B46EEB3A55A726A24FAEB /* SignUpView.swift in Sources */,
+				615B4C310993C48969F40A10 /* OnboardingController.swift in Sources */,
+				615B4A037B60668B5503DE40 /* OnboardingView.swift in Sources */,
+				615B41AA4F20F695D3A54030 /* OnboardingCoordinator.swift in Sources */,
+				615B49BF65AE8999D2342570 /* OnboardingCoordinatorOutput.swift in Sources */,
+				615B454432D32DC340A0AFDD /* CoordinatorFactoryImpl.swift in Sources */,
+				615B4D9E5035EFC1DC868830 /* ModuleFactoryImp.swift in Sources */,
+				615B4E2549762FDF0F50890A /* UIViewController+ext.swift in Sources */,
+				615B408220DF1A7F43DCD379 /* ApplicationCoordinator.swift in Sources */,
+				615B48E5D21E9687DE9F701B /* BaseView.swift in Sources */,
+				615B43A7A422B527ABAB101C /* Presentable.swift in Sources */,
+				615B43D037DFD7686E5C1DF5 /* MaterialColors.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -471,6 +597,7 @@
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -479,6 +606,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = zlmnv.TournamentJS;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "TournamentJS/Sopporting Files/TournamentJS-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -499,6 +627,7 @@
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -507,6 +636,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = zlmnv.TournamentJS;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "TournamentJS/Sopporting Files/TournamentJS-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
