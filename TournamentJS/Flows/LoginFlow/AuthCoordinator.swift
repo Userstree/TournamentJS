@@ -35,6 +35,6 @@ final class AuthCoordinator: BaseCoordinator, AuthCoordinatorOutput {
         signUpView?.onSignUpComplete = { [weak self] in
             self?.finishFlow?()
         }
-        router.push(signUpView)
+        router.push(signUpView, animated: true)
     }
 }

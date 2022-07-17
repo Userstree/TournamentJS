@@ -3,24 +3,11 @@
 //
 
 extension UITextField {
-    func setTextColor(_ color: UIColor, font: UIFont) {
-
-        textColor = color
-        self.font = font
-    }
-
-    func setBottomBorder(with color: UIColor, width: CGFloat) {
+    func addBottomBorder(){
+        let bottomLine = CALayer()
+        bottomLine.frame = CGRect(x: 0, y: frame.size.height - 1, width: frame.size.width, height: 1)
+        bottomLine.backgroundColor = UIColor.black.cgColor
         borderStyle = .none
-        layer.backgroundColor = UIColor.white.cgColor
-
-        layer.masksToBounds = false
-        layer.shadowColor = color.cgColor
-        layer.shadowOffset = CGSize(width: 0.0, height: width)
-        layer.shadowOpacity = 1.0
-        layer.shadowRadius = 0.0
-    }
-
-    func setPlaceHolderAttributes(placeHolderText : String, colour : UIColor , font : UIFont){
-        attributedPlaceholder = NSAttributedString(string:placeHolderText, attributes:[NSAttributedString.Key.foregroundColor: colour , NSAttributedString.Key.font : font])
+        layer.addSublayer(bottomLine)
     }
 }

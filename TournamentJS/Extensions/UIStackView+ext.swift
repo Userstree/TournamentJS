@@ -18,3 +18,27 @@ extension UIStackView {
         elements.forEach { addArrangedSubview($0.view) }
     }
 }
+
+
+enum ContentElement {
+    case imageView(UIImage)
+    case imageLabel(String)
+}
+
+extension ContentElement {
+    var view: UIView {
+        switch self {
+        case .imageView(let image):
+            let imageView = UIImageView()
+            imageView.image = image
+            imageView.backgroundColor = .systemGray4
+            imageView.contentMode = .scaleAspectFit
+            return imageView
+        case .imageLabel(let text):
+            let label = UILabel()
+            label.text = text
+            label.font = UIFont.systemFont(ofSize: 22, weight: .bold)
+            return label
+        }
+    }
+}

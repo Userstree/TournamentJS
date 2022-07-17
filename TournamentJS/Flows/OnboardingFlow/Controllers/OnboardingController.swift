@@ -62,10 +62,12 @@ class OnboardingController: UIViewController, OnboardingView {
     private lazy var getStartedButton: UIButton = {
         let button = UIButton()
         button.setTitle("GET STARTED", for: .normal)
+        button.titleLabel?.font = UIFont.systemFont(ofSize: 18, weight: .bold)
         button.layer.cornerRadius = 22
         button.layer.cornerCurve = .continuous
-        button.layer.borderWidth = 1
-        button.contentEdgeInsets = UIEdgeInsets(top: 10, left: 25, bottom: 10, right: 25)
+        button.layer.borderWidth = 0.7
+        button.layer.borderColor = UIColor.white.cgColor
+        button.contentEdgeInsets = UIEdgeInsets(top: 10, left: 26, bottom: 10, right: 26)
         button.addTarget(self, action: #selector(skipButtonTapped), for: .touchUpInside)
         button.clipsToBounds = true
         return button
