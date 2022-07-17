@@ -6,15 +6,16 @@ import paper_onboarding
 
 class OnboardingController: UIViewController, OnboardingView {
     var onFinish: (() -> Void)?
-    private var onBoardingItems = [OnboardingItemInfo(informationImage: UIImage(named: "teamIcon")!,
-            title: "Oversee",
-            description: "Manage tornaments. ",
-            pageIcon: UIImage(systemName: "person.badge.plus")!,
-            color: .systemIndigo,
-            titleColor: .white,
-            descriptionColor: .white,
-            titleFont: UIFont.systemFont(ofSize: 38, weight: .bold),
-            descriptionFont: UIFont.systemFont(ofSize: 16, weight: .light)),
+    private var onBoardingItems = [
+        OnboardingItemInfo(informationImage: UIImage(named: "teamIcon")!,
+                title: "Oversee",
+                description: "Manage tornaments. ",
+                pageIcon: UIImage(systemName: "person.badge.plus")!,
+                color: .systemIndigo,
+                titleColor: .white,
+                descriptionColor: .white,
+                titleFont: UIFont.systemFont(ofSize: 38, weight: .bold),
+                descriptionFont: UIFont.systemFont(ofSize: 16, weight: .light)),
 
         OnboardingItemInfo(informationImage: UIImage(named: "playStationController")!,
                 title: "Play",
@@ -41,6 +42,16 @@ class OnboardingController: UIViewController, OnboardingView {
         UIColor.white,
     ]
 
+    private var pageIndex = 0 {
+        didSet {
+            if pageIndex == onBoardingItems.count - 1 {
+                getStartedButton.isHidden = false
+            } else {
+                getStartedButton.isHidden = true
+            }
+        }
+    }
+
     private lazy var paperOnboarding: PaperOnboarding = {
         let view = PaperOnboarding()
         view.dataSource = self
@@ -48,30 +59,64 @@ class OnboardingController: UIViewController, OnboardingView {
         return view
     }()
 
-    private lazy var skipButton: UIButton = {
+    private lazy var getStartedButton: UIButton = {
         let button = UIButton()
-        button.setTitle("Skip", for: .normal)
-        button.addTarget(self, action: #selector(), for: .touchUpInside)
+        button.setTitle("GET STARTED", for: .normal)
+        button.layer.cornerRadius = 22
+        button.layer.cornerCurve = .continuous
+        button.layer.borderWidth = 1
+        button.contentEdgeInsets = UIEdgeInsets(top: 10, left: 25, bottom: 10, right: 25)
+        button.addTarget(self, action: #selector(skipButtonTapped), for: .touchUpInside)
+        button.clipsToBounds = true
         return button
     }()
+
+    override func viewWillLayoutSubviews() {
+        super.viewWillLayoutSubviews()
+        makeButtonGradient()
+    }
 
     override func viewDidLoad() {
         super.viewDidLoad()
         configureViews()
     }
 
-    private func configureSkipButton() {
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        configureSkipButton()
+        hideButton()
+    }
 
+    private func makeButtonGradient() {
+        getStartedButton.frame = getStartedButton.bounds
+        getStartedButton.applyGradient(colours: [ButtonGradientColors.leftColor, ButtonGradientColors.rightColor], locations: [0.0, 1.0])
+    }
+
+    private func hideButton() {
+        getStartedButton.isHidden = true
+    }
+
+    private func configureSkipButton() {
+        let skipNavBarItem = UIBarButtonItem(title: "Skip", style: .plain, target: self, action: #selector(skipButtonTapped))
+        navigationItem.rightBarButtonItem = skipNavBarItem
+        navigationItem.rightBarButtonItem?.tintColor = .white
+    }
+
+    @objc private func skipButtonTapped() {
+        onFinish?()
     }
 
     private func configureViews() {
-        view.addSubview(paperOnboarding)
+        [paperOnboarding, getStartedButton].forEach(view.addSubview)
         makeConstraints()
     }
-
     private func makeConstraints() {
         paperOnboarding.snp.makeConstraints {
             $0.edges.equalTo(view.snp.edges)
+        }
+        getStartedButton.snp.makeConstraints{
+            $0.bottom.equalTo(view.snp.bottom).offset(-140)
+            $0.centerX.equalTo(view.snp.centerX)
         }
     }
 }
@@ -88,7 +133,7 @@ extension OnboardingController: PaperOnboardingDataSource {
     }
 
     public func onboardingPageItemSelectedRadius() -> CGFloat {
-        26
+        24
     }
 
     func onboardingPageItemColor(at index: Int) -> UIColor {
@@ -98,6 +143,7 @@ extension OnboardingController: PaperOnboardingDataSource {
 
 extension OnboardingController: PaperOnboardingDelegate {
     public func onboardingConfigurationItem(_ item: OnboardingContentViewItem, index: Int) {
+        pageIndex = index
         item.imageView?.contentMode = .scaleAspectFill
     }
 

@@ -11,3 +11,10 @@ extension UIStackView {
         }
     }
 }
+
+extension UIStackView {
+    convenience init(elements: [ContentElement]) {
+        self.init()
+        elements.forEach { addArrangedSubview($0.view) }
+    }
+}

@@ -18,9 +18,12 @@
 		615B4399ECA2F245134A2A68 /* AuthCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 615B47708D4DF491F5EBE5FB /* AuthCoordinator.swift */; };
 		615B43A7A422B527ABAB101C /* Presentable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 615B464DACB07F04CDFFFDDE /* Presentable.swift */; };
 		615B43D037DFD7686E5C1DF5 /* MaterialColors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 615B44E546DE919AF6A030C1 /* MaterialColors.swift */; };
+		615B43EC23AD164911D3C3C2 /* UITextField+ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 615B4AB177FD6520856D7A11 /* UITextField+ext.swift */; };
 		615B44910C719674E5944488 /* LoginController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 615B4ACF4157E44052B6BA80 /* LoginController.swift */; };
+		615B4534C3645E26350498BD /* UIView+ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 615B40DF46976A0631A1A089 /* UIView+ext.swift */; };
 		615B454432D32DC340A0AFDD /* CoordinatorFactoryImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 615B4F9C5F4D1E11C97AE44A /* CoordinatorFactoryImpl.swift */; };
 		615B468184E708A86134E088 /* DeepLinkOption.swift in Sources */ = {isa = PBXBuildFile; fileRef = 615B42FEDF78006557D356D6 /* DeepLinkOption.swift */; };
+		615B46917CA31D960FF7577D /* UIColor+ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 615B48A70D3A00AA763E1051 /* UIColor+ext.swift */; };
 		615B46EEB3A55A726A24FAEB /* SignUpView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 615B40E05C9293EA1BCDF79C /* SignUpView.swift */; };
 		615B472A97109D55AF999FC4 /* CoordinatorFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 615B41B6A9E2F3774CCD75A0 /* CoordinatorFactory.swift */; };
 		615B48A0A0C0EC189988A677 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 615B4A268B53D786079E02C7 /* LoginView.swift */; };
@@ -45,6 +48,7 @@
 		05A545722864B4140089FABB /* TournamentJS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TournamentJS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		05A545812864B4140089FABB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5F8B225B79CA0D658D01542E /* Pods-TournamentJS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TournamentJS.debug.xcconfig"; path = "Target Support Files/Pods-TournamentJS/Pods-TournamentJS.debug.xcconfig"; sourceTree = "<group>"; };
+		615B40DF46976A0631A1A089 /* UIView+ext.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+ext.swift"; sourceTree = "<group>"; };
 		615B40E05C9293EA1BCDF79C /* SignUpView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignUpView.swift; sourceTree = "<group>"; };
 		615B411252A6264915D7AC98 /* OnboardingView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OnboardingView.swift; sourceTree = "<group>"; };
 		615B4160097D6835854C7BCA /* BaseCoordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseCoordinator.swift; sourceTree = "<group>"; };
@@ -59,7 +63,9 @@
 		615B464DACB07F04CDFFFDDE /* Presentable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Presentable.swift; sourceTree = "<group>"; };
 		615B47708D4DF491F5EBE5FB /* AuthCoordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthCoordinator.swift; sourceTree = "<group>"; };
 		615B478013E00EC336279194 /* Coordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
+		615B48A70D3A00AA763E1051 /* UIColor+ext.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor+ext.swift"; sourceTree = "<group>"; };
 		615B4A268B53D786079E02C7 /* LoginView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		615B4AB177FD6520856D7A11 /* UITextField+ext.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UITextField+ext.swift"; sourceTree = "<group>"; };
 		615B4ACF4157E44052B6BA80 /* LoginController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginController.swift; sourceTree = "<group>"; };
 		615B4B632102BD1547F4743B /* Router.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Router.swift; sourceTree = "<group>"; };
 		615B4B81E079A154F5E3F876 /* OnboardingModuleFactory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OnboardingModuleFactory.swift; sourceTree = "<group>"; };
@@ -96,6 +102,9 @@
 			children = (
 				0525CDB22864B609007A6C95 /* UIStackView+ext.swift */,
 				615B43664D9AF810A3A7AD77 /* UIViewController+ext.swift */,
+				615B48A70D3A00AA763E1051 /* UIColor+ext.swift */,
+				615B40DF46976A0631A1A089 /* UIView+ext.swift */,
+				615B4AB177FD6520856D7A11 /* UITextField+ext.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -451,6 +460,9 @@
 				615B48E5D21E9687DE9F701B /* BaseView.swift in Sources */,
 				615B43A7A422B527ABAB101C /* Presentable.swift in Sources */,
 				615B43D037DFD7686E5C1DF5 /* MaterialColors.swift in Sources */,
+				615B46917CA31D960FF7577D /* UIColor+ext.swift in Sources */,
+				615B4534C3645E26350498BD /* UIView+ext.swift in Sources */,
+				615B43EC23AD164911D3C3C2 /* UITextField+ext.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

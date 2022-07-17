@@ -3,14 +3,14 @@
 //
 
 fileprivate var onboardingWasShown = false
-fileprivate var isAutorized = false
+fileprivate var isAuthorized = false
 
 fileprivate enum LaunchInstructor {
     case main, auth, onboarding
 
     static func configure(
             tutorialWasShown: Bool = onboardingWasShown,
-            isAutorized: Bool = isAutorized
+            isAutorized: Bool = isAuthorized
     ) -> LaunchInstructor {
         switch (tutorialWasShown, isAutorized) {
         case (true, false), (false, false): return .auth
@@ -54,7 +54,7 @@ final class ApplicationCoordinator: BaseCoordinator {
     private func runAuthFlow() {
         let coordinator = coordinatorFactory.makeAuthCoordinatorBox(router: router)
         coordinator.finishFlow = { [weak self, weak coordinator] in
-            isAutorized = true
+            isAuthorized = true
             self?.start()
             self?.removeDependency(coordinator)
         }
