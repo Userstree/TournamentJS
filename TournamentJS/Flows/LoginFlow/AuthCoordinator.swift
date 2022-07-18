@@ -7,10 +7,10 @@ final class AuthCoordinator: BaseCoordinator, AuthCoordinatorOutput {
     var finishFlow: (() -> Void)?
 
     private let factory: AuthModuleFactory
-    private let router: Router
+    private let router: RouterProtocol
     private weak var signUpView: SignUpView?
 
-    init(router: Router, factory: AuthModuleFactory) {
+    init(router: RouterProtocol, factory: AuthModuleFactory) {
         self.factory = factory
         self.router = router
     }
@@ -35,6 +35,6 @@ final class AuthCoordinator: BaseCoordinator, AuthCoordinatorOutput {
         signUpView?.onSignUpComplete = { [weak self] in
             self?.finishFlow?()
         }
-        router.push(signUpView, animated: true)
+        router.push(signUpView)
     }
 }

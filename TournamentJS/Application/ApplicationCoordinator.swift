@@ -2,33 +2,16 @@
 // Created by Dossymkhan Zhulamanov on 17.07.2022.
 //
 
-fileprivate var onboardingWasShown = false
-fileprivate var isAuthorized = false
-
-fileprivate enum LaunchInstructor {
-    case main, auth, onboarding
-
-    static func configure(
-            tutorialWasShown: Bool = onboardingWasShown,
-            isAutorized: Bool = isAuthorized
-    ) -> LaunchInstructor {
-        switch (tutorialWasShown, isAutorized) {
-        case (true, false), (false, false): return .auth
-        case (false, true): return .onboarding
-        case (true, true): return .main
-        }
-    }
-}
-
 final class ApplicationCoordinator: BaseCoordinator {
     private let coordinatorFactory: CoordinatorFactory
-    private let router: Router
+    private let router: RouterProtocol
+    private var lauchInstructor = LaunchInstructor.configure()
 
     private var instructor: LaunchInstructor {
         LaunchInstructor.configure()
     }
 
-    init(router: Router, coordinatorFactory: CoordinatorFactory) {
+    init(router: RouterProtocol, coordinatorFactory: CoordinatorFactory) {
         self.router = router
         self.coordinatorFactory = coordinatorFactory
     }
@@ -54,7 +37,7 @@ final class ApplicationCoordinator: BaseCoordinator {
     private func runAuthFlow() {
         let coordinator = coordinatorFactory.makeAuthCoordinatorBox(router: router)
         coordinator.finishFlow = { [weak self, weak coordinator] in
-            isAuthorized = true
+            self?.lauchInstructor = LaunchInstructor.configure(tutorialWasShown: false, isAutorized: true)
             self?.start()
             self?.removeDependency(coordinator)
         }
@@ -65,7 +48,7 @@ final class ApplicationCoordinator: BaseCoordinator {
     private func runOnboardingFlow() {
         let coordinator = coordinatorFactory.makeOnboardingCoordinator(router: router)
         coordinator.finishFlow = { [weak self, weak coordinator] in
-            onboardingWasShown = true
+            self?.lauchInstructor = LaunchInstructor.configure(tutorialWasShown: true, isAutorized: true)
             self?.start()
             self?.removeDependency(coordinator)
         }

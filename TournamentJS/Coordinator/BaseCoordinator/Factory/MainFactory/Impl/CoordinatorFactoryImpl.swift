@@ -13,12 +13,12 @@ final class CoordinatorFactoryImp:
         makeSettingsCoordinator()
     }
 
-    func makeAuthCoordinatorBox(router: Router) -> Coordinator & AuthCoordinatorOutput {
+    func makeAuthCoordinatorBox(router: RouterProtocol) -> Coordinator & AuthCoordinatorOutput {
         let coordinator = AuthCoordinator(router: router, factory: ModuleFactoryImp())
         return coordinator
     }
 
-    func makeOnboardingCoordinator(router: Router) -> Coordinator & OnboardingCoordinatorOutput {
+    func makeOnboardingCoordinator(router: RouterProtocol) -> Coordinator & OnboardingCoordinatorOutput {
         OnboardingCoordinator(with: ModuleFactoryImp(), router: router)
     }
 
@@ -31,8 +31,8 @@ final class CoordinatorFactoryImp:
 //        return coordinator
 //    }
 
-    private func router(_ navController: UINavigationController?) -> Router {
-        RouterImp(rootController: navigationController(navController))
+    private func router(_ navController: UINavigationController?) -> RouterProtocol {
+        Router(rootController: navigationController(navController))
     }
 
     private func navigationController(_ navController: UINavigationController?) -> UINavigationController {

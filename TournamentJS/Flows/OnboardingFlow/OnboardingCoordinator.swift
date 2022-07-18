@@ -7,9 +7,9 @@ class OnboardingCoordinator: BaseCoordinator, OnboardingCoordinatorOutput {
     var finishFlow: (() -> Void)?
 
     private let factory: OnboardingModuleFactory
-    private let router: Router
+    private let router: RouterProtocol
 
-    init(with factory: OnboardingModuleFactory, router: Router) {
+    init(with factory: OnboardingModuleFactory, router: RouterProtocol) {
         self.factory = factory
         self.router = router
     }

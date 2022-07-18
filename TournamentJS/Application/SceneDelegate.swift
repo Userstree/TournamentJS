@@ -30,7 +30,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 
     private func makeCoordinator() -> Coordinator {
         ApplicationCoordinator(
-                router: RouterImp(rootController: rootController),
+                router: Router(rootController: rootController),
                 coordinatorFactory: CoordinatorFactoryImp()
         )
     }

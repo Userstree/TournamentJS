@@ -12,35 +12,43 @@
 		3CB0CCBD1D42789450B865E2 /* Pods_TournamentJS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BF1332EBAF0E0C0BEB69AC5C /* Pods_TournamentJS.framework */; };
 		615B408220DF1A7F43DCD379 /* ApplicationCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 615B4F759B74025A03F6142A /* ApplicationCoordinator.swift */; };
 		615B41AA4F20F695D3A54030 /* OnboardingCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 615B4445B32F5D0922403730 /* OnboardingCoordinator.swift */; };
-		615B41BED9C0499665FB2034 /* RouterImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 615B4C594C0A47092216FF69 /* RouterImpl.swift */; };
-		615B42CF6C74A066FD919005 /* OnboardingModuleFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 615B4B81E079A154F5E3F876 /* OnboardingModuleFactory.swift */; };
-		615B43756262A4200F2CBA4E /* AuthModuleFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 615B4249785D202865F45DD0 /* AuthModuleFactory.swift */; };
 		615B4399ECA2F245134A2A68 /* AuthCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 615B47708D4DF491F5EBE5FB /* AuthCoordinator.swift */; };
-		615B43A7A422B527ABAB101C /* Presentable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 615B464DACB07F04CDFFFDDE /* Presentable.swift */; };
 		615B43D037DFD7686E5C1DF5 /* MaterialColors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 615B44E546DE919AF6A030C1 /* MaterialColors.swift */; };
 		615B43EC23AD164911D3C3C2 /* UITextField+ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 615B4AB177FD6520856D7A11 /* UITextField+ext.swift */; };
 		615B44910C719674E5944488 /* LoginController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 615B4ACF4157E44052B6BA80 /* LoginController.swift */; };
 		615B4534C3645E26350498BD /* UIView+ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 615B40DF46976A0631A1A089 /* UIView+ext.swift */; };
-		615B454432D32DC340A0AFDD /* CoordinatorFactoryImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 615B4F9C5F4D1E11C97AE44A /* CoordinatorFactoryImpl.swift */; };
-		615B468184E708A86134E088 /* DeepLinkOption.swift in Sources */ = {isa = PBXBuildFile; fileRef = 615B42FEDF78006557D356D6 /* DeepLinkOption.swift */; };
 		615B46917CA31D960FF7577D /* UIColor+ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 615B48A70D3A00AA763E1051 /* UIColor+ext.swift */; };
 		615B46EEB3A55A726A24FAEB /* SignUpView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 615B40E05C9293EA1BCDF79C /* SignUpView.swift */; };
-		615B472A97109D55AF999FC4 /* CoordinatorFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 615B41B6A9E2F3774CCD75A0 /* CoordinatorFactory.swift */; };
 		615B48A0A0C0EC189988A677 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 615B4A268B53D786079E02C7 /* LoginView.swift */; };
-		615B48E5D21E9687DE9F701B /* BaseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 615B4FB45583E55A36EA18AB /* BaseView.swift */; };
 		615B497013E179BAAE83FAC1 /* SignUpController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 615B4F65CA36C95CEF43E6BA /* SignUpController.swift */; };
 		615B49BF65AE8999D2342570 /* OnboardingCoordinatorOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 615B46484484E47F3A2DF22C /* OnboardingCoordinatorOutput.swift */; };
 		615B4A037B60668B5503DE40 /* OnboardingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 615B411252A6264915D7AC98 /* OnboardingView.swift */; };
-		615B4A5720A346B4CB46EF8E /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 615B478013E00EC336279194 /* Coordinator.swift */; };
-		615B4A82586250D4E54151D2 /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = 615B4B632102BD1547F4743B /* Router.swift */; };
 		615B4C310993C48969F40A10 /* OnboardingController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 615B4C991F2512E0BB31DCB2 /* OnboardingController.swift */; };
-		615B4C5494692926E6A56B1A /* BaseCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 615B4160097D6835854C7BCA /* BaseCoordinator.swift */; };
-		615B4D9E5035EFC1DC868830 /* ModuleFactoryImp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 615B4594A28232FB790C0055 /* ModuleFactoryImp.swift */; };
 		615B4E2549762FDF0F50890A /* UIViewController+ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 615B43664D9AF810A3A7AD77 /* UIViewController+ext.swift */; };
 		615B4FFDCAFED95D503BB707 /* AuthCoordinatorOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 615B4EFF10BB70D4265F020F /* AuthCoordinatorOutput.swift */; };
+		F884306D7AAE9421F2F96C65 /* DeepLinkOption.swift in Sources */ = {isa = PBXBuildFile; fileRef = F884353E116983CFA5DA0EB8 /* DeepLinkOption.swift */; };
+		F88430B7715D8673037F17ED /* LoginModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F884367D2486E252041627A2 /* LoginModel.swift */; };
+		F88430F45F027560B1588317 /* Presentable.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8843E1A6113813C2D50605D /* Presentable.swift */; };
 		F88431A459EE8B24A650D5FF /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F884391A0C34184313162B1D /* SceneDelegate.swift */; };
+		F88432E208B48E0FDABF9F64 /* SignUpViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8843AAF2380284EF9F835CB /* SignUpViewModel.swift */; };
+		F884331058647DAAF90454FF /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F88433EE55DA56330A47A7EC /* SignUpViewController.swift */; };
+		F88434886B12E7B8A1F20A0B /* BaseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F884367C05D88443B5A2FEE0 /* BaseView.swift */; };
+		F88434AFA61642E4CC20A5EA /* BaseCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8843FE7C907DF004BC33BE2 /* BaseCoordinator.swift */; };
+		F88434EC76DEA9BFE7BC6625 /* RouterProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8843246533EEC099C9C7A17 /* RouterProtocol.swift */; };
 		F884353CE924CAEFAED68FE8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F88431E3D853B2B7F4106137 /* Assets.xcassets */; };
+		F88435BD8B1F4DED052277B3 /* VieControllerFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = F88436A391060FD70D1B1566 /* VieControllerFactory.swift */; };
 		F884369608DBEC822F233356 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8843F486748C463CB59F0D5 /* AppDelegate.swift */; };
+		F884373FFD47D7D00D1E24D8 /* CoordinatorFactoryImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = F884330D116D103695B2710C /* CoordinatorFactoryImpl.swift */; };
+		F88437A502645C58E267707F /* CoordinatorFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = F88435FAA72C401B93A7BDAF /* CoordinatorFactory.swift */; };
+		F88439D285A00F1FAD7D6A3B /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8843285CC2599AAA3E180B1 /* LoginViewModel.swift */; };
+		F8843B15961C1B7BF5083F38 /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = F88434459FDC7E8BD1060EFD /* Coordinator.swift */; };
+		F8843BE3A12C94C18B94D2FE /* SignUpModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F88437A9D3DDBF25E1674518 /* SignUpModel.swift */; };
+		F8843BF024A3E2B5D4DBA4FC /* LaunchInstructor.swift in Sources */ = {isa = PBXBuildFile; fileRef = F884308BEAAF82687A0529CA /* LaunchInstructor.swift */; };
+		F8843CA0D65C003EC3EC3893 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8843069CD8F78AEA562EB0F /* LoginViewController.swift */; };
+		F8843DF379DCFBDBE8898F42 /* OnboardingModuleFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = F88432CD6A93CE0F30CAD6B8 /* OnboardingModuleFactory.swift */; };
+		F8843E0BA62C6BA5179AF381 /* ModuleFactoryImp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F884396693B05BA048D106E6 /* ModuleFactoryImp.swift */; };
+		F8843F2F95CDB9A30693DDAB /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8843CE1450ABA757E1DF839 /* Router.swift */; };
+		F8843F87939FECBAEE26EBB7 /* AuthModuleFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = F884365E0A6C1A49A809A203 /* AuthModuleFactory.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -51,37 +59,45 @@
 		615B40DF46976A0631A1A089 /* UIView+ext.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+ext.swift"; sourceTree = "<group>"; };
 		615B40E05C9293EA1BCDF79C /* SignUpView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignUpView.swift; sourceTree = "<group>"; };
 		615B411252A6264915D7AC98 /* OnboardingView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OnboardingView.swift; sourceTree = "<group>"; };
-		615B4160097D6835854C7BCA /* BaseCoordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseCoordinator.swift; sourceTree = "<group>"; };
-		615B41B6A9E2F3774CCD75A0 /* CoordinatorFactory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoordinatorFactory.swift; sourceTree = "<group>"; };
-		615B4249785D202865F45DD0 /* AuthModuleFactory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthModuleFactory.swift; sourceTree = "<group>"; };
-		615B42FEDF78006557D356D6 /* DeepLinkOption.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DeepLinkOption.swift; sourceTree = "<group>"; };
 		615B43664D9AF810A3A7AD77 /* UIViewController+ext.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIViewController+ext.swift"; sourceTree = "<group>"; };
 		615B4445B32F5D0922403730 /* OnboardingCoordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OnboardingCoordinator.swift; sourceTree = "<group>"; };
 		615B44E546DE919AF6A030C1 /* MaterialColors.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MaterialColors.swift; sourceTree = "<group>"; };
-		615B4594A28232FB790C0055 /* ModuleFactoryImp.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ModuleFactoryImp.swift; sourceTree = "<group>"; };
 		615B46484484E47F3A2DF22C /* OnboardingCoordinatorOutput.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OnboardingCoordinatorOutput.swift; sourceTree = "<group>"; };
-		615B464DACB07F04CDFFFDDE /* Presentable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Presentable.swift; sourceTree = "<group>"; };
 		615B47708D4DF491F5EBE5FB /* AuthCoordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthCoordinator.swift; sourceTree = "<group>"; };
-		615B478013E00EC336279194 /* Coordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
 		615B48A70D3A00AA763E1051 /* UIColor+ext.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor+ext.swift"; sourceTree = "<group>"; };
 		615B4A268B53D786079E02C7 /* LoginView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 		615B4AB177FD6520856D7A11 /* UITextField+ext.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UITextField+ext.swift"; sourceTree = "<group>"; };
 		615B4ACF4157E44052B6BA80 /* LoginController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginController.swift; sourceTree = "<group>"; };
-		615B4B632102BD1547F4743B /* Router.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Router.swift; sourceTree = "<group>"; };
-		615B4B81E079A154F5E3F876 /* OnboardingModuleFactory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OnboardingModuleFactory.swift; sourceTree = "<group>"; };
-		615B4C594C0A47092216FF69 /* RouterImpl.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RouterImpl.swift; sourceTree = "<group>"; };
 		615B4C991F2512E0BB31DCB2 /* OnboardingController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OnboardingController.swift; sourceTree = "<group>"; };
 		615B4EFF10BB70D4265F020F /* AuthCoordinatorOutput.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthCoordinatorOutput.swift; sourceTree = "<group>"; };
 		615B4F65CA36C95CEF43E6BA /* SignUpController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignUpController.swift; sourceTree = "<group>"; };
 		615B4F759B74025A03F6142A /* ApplicationCoordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ApplicationCoordinator.swift; sourceTree = "<group>"; };
-		615B4F9C5F4D1E11C97AE44A /* CoordinatorFactoryImpl.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoordinatorFactoryImpl.swift; sourceTree = "<group>"; };
-		615B4FB45583E55A36EA18AB /* BaseView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseView.swift; sourceTree = "<group>"; };
 		BF1332EBAF0E0C0BEB69AC5C /* Pods_TournamentJS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TournamentJS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C2F73F9F2882D095004CD077 /* TournamentJS-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "TournamentJS-Bridging-Header.h"; path = "TournamentJS/Sopporting Files/TournamentJS-Bridging-Header.h"; sourceTree = SOURCE_ROOT; };
+		F8843069CD8F78AEA562EB0F /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		F884308BEAAF82687A0529CA /* LaunchInstructor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LaunchInstructor.swift; sourceTree = "<group>"; };
 		F88431E3D853B2B7F4106137 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F8843246533EEC099C9C7A17 /* RouterProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RouterProtocol.swift; sourceTree = "<group>"; };
+		F8843285CC2599AAA3E180B1 /* LoginViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
+		F88432CD6A93CE0F30CAD6B8 /* OnboardingModuleFactory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OnboardingModuleFactory.swift; sourceTree = "<group>"; };
+		F884330D116D103695B2710C /* CoordinatorFactoryImpl.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoordinatorFactoryImpl.swift; sourceTree = "<group>"; };
+		F88433EE55DA56330A47A7EC /* SignUpViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
+		F88434459FDC7E8BD1060EFD /* Coordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
+		F884353E116983CFA5DA0EB8 /* DeepLinkOption.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DeepLinkOption.swift; sourceTree = "<group>"; };
+		F88435FAA72C401B93A7BDAF /* CoordinatorFactory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoordinatorFactory.swift; sourceTree = "<group>"; };
+		F884365E0A6C1A49A809A203 /* AuthModuleFactory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthModuleFactory.swift; sourceTree = "<group>"; };
+		F884367C05D88443B5A2FEE0 /* BaseView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseView.swift; sourceTree = "<group>"; };
+		F884367D2486E252041627A2 /* LoginModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginModel.swift; sourceTree = "<group>"; };
+		F88436A391060FD70D1B1566 /* VieControllerFactory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VieControllerFactory.swift; sourceTree = "<group>"; };
+		F88437A9D3DDBF25E1674518 /* SignUpModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignUpModel.swift; sourceTree = "<group>"; };
 		F884391A0C34184313162B1D /* SceneDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		F884396693B05BA048D106E6 /* ModuleFactoryImp.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ModuleFactoryImp.swift; sourceTree = "<group>"; };
+		F8843AAF2380284EF9F835CB /* SignUpViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignUpViewModel.swift; sourceTree = "<group>"; };
+		F8843CE1450ABA757E1DF839 /* Router.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Router.swift; sourceTree = "<group>"; };
+		F8843E1A6113813C2D50605D /* Presentable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Presentable.swift; sourceTree = "<group>"; };
 		F8843F486748C463CB59F0D5 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F8843F779A245E495C0FB417 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = "TournamentJS/Sopporting Files/Info.plist"; sourceTree = SOURCE_ROOT; };
+		F8843FE7C907DF004BC33BE2 /* BaseCoordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseCoordinator.swift; sourceTree = "<group>"; };
 		FDCC916173E4162C0D38F193 /* Pods-TournamentJS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TournamentJS.release.xcconfig"; path = "Target Support Files/Pods-TournamentJS/Pods-TournamentJS.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -134,11 +150,10 @@
 				05A545802864B4140089FABB /* LaunchScreen.storyboard */,
 				F884386EC6B132BDCC50B6CC /* Sopporting Files */,
 				F88431BA20A0BA0F7E9E6246 /* Application */,
-				615B4605F12DEFB7F9044302 /* Coordinator */,
-				615B45C92D000F7DFA581A5F /* Factories */,
 				615B44A2D37D9AC12203943A /* Flows */,
-				615B483111822F0D5191CA65 /* Router */,
 				615B45A8D6DBBD3EA09F393F /* Resources */,
+				F8843A7D5C8BF2EEABFFB845 /* Coordinator */,
+				F88438C7E47F1F94C6D09B31 /* Scenes */,
 			);
 			path = TournamentJS;
 			sourceTree = "<group>";
@@ -179,32 +194,12 @@
 			path = Flows;
 			sourceTree = "<group>";
 		};
-		615B450D0EE96A857AD14702 /* Protocols */ = {
-			isa = PBXGroup;
-			children = (
-				615B4FB45583E55A36EA18AB /* BaseView.swift */,
-				615B464DACB07F04CDFFFDDE /* Presentable.swift */,
-			);
-			path = Protocols;
-			sourceTree = "<group>";
-		};
 		615B45A8D6DBBD3EA09F393F /* Resources */ = {
 			isa = PBXGroup;
 			children = (
 				615B44E546DE919AF6A030C1 /* MaterialColors.swift */,
 			);
 			path = Resources;
-			sourceTree = "<group>";
-		};
-		615B45C92D000F7DFA581A5F /* Factories */ = {
-			isa = PBXGroup;
-			children = (
-				615B4A4AE7EE0DE49ECAFDF1 /* MainFactory */,
-				615B4249785D202865F45DD0 /* AuthModuleFactory.swift */,
-				615B4B81E079A154F5E3F876 /* OnboardingModuleFactory.swift */,
-				615B48150E5F766932CFA0C5 /* Impl */,
-			);
-			path = Factories;
 			sourceTree = "<group>";
 		};
 		615B45FE06E052F06ECF7DC9 /* Controllers */ = {
@@ -214,35 +209,6 @@
 				615B411252A6264915D7AC98 /* OnboardingView.swift */,
 			);
 			path = Controllers;
-			sourceTree = "<group>";
-		};
-		615B4605F12DEFB7F9044302 /* Coordinator */ = {
-			isa = PBXGroup;
-			children = (
-				615B478013E00EC336279194 /* Coordinator.swift */,
-				615B42FEDF78006557D356D6 /* DeepLinkOption.swift */,
-				615B4E22A9B642DDD52F87D2 /* BaseCoordinator */,
-				615B450D0EE96A857AD14702 /* Protocols */,
-			);
-			path = Coordinator;
-			sourceTree = "<group>";
-		};
-		615B48150E5F766932CFA0C5 /* Impl */ = {
-			isa = PBXGroup;
-			children = (
-				615B4F9C5F4D1E11C97AE44A /* CoordinatorFactoryImpl.swift */,
-				615B4594A28232FB790C0055 /* ModuleFactoryImp.swift */,
-			);
-			path = Impl;
-			sourceTree = "<group>";
-		};
-		615B483111822F0D5191CA65 /* Router */ = {
-			isa = PBXGroup;
-			children = (
-				615B4B632102BD1547F4743B /* Router.swift */,
-				615B4C594C0A47092216FF69 /* RouterImpl.swift */,
-			);
-			path = Router;
 			sourceTree = "<group>";
 		};
 		615B485A8971F572FFB7C915 /* LoginFlow */ = {
@@ -255,14 +221,6 @@
 			path = LoginFlow;
 			sourceTree = "<group>";
 		};
-		615B4A4AE7EE0DE49ECAFDF1 /* MainFactory */ = {
-			isa = PBXGroup;
-			children = (
-				615B41B6A9E2F3774CCD75A0 /* CoordinatorFactory.swift */,
-			);
-			path = MainFactory;
-			sourceTree = "<group>";
-		};
 		615B4E0C999373F372F163E2 /* Login */ = {
 			isa = PBXGroup;
 			children = (
@@ -270,14 +228,6 @@
 				615B4A268B53D786079E02C7 /* LoginView.swift */,
 			);
 			path = Login;
-			sourceTree = "<group>";
-		};
-		615B4E22A9B642DDD52F87D2 /* BaseCoordinator */ = {
-			isa = PBXGroup;
-			children = (
-				615B4160097D6835854C7BCA /* BaseCoordinator.swift */,
-			);
-			path = BaseCoordinator;
 			sourceTree = "<group>";
 		};
 		615B4FADA696D40AF6E025AC /* SignUp */ = {
@@ -298,6 +248,16 @@
 			path = Pods;
 			sourceTree = "<group>";
 		};
+		F884300F03FA3FE7FAC13CD9 /* SignUp */ = {
+			isa = PBXGroup;
+			children = (
+				F88433EE55DA56330A47A7EC /* SignUpViewController.swift */,
+				F8843AAF2380284EF9F835CB /* SignUpViewModel.swift */,
+				F88437A9D3DDBF25E1674518 /* SignUpModel.swift */,
+			);
+			path = SignUp;
+			sourceTree = "<group>";
+		};
 		F88431BA20A0BA0F7E9E6246 /* Application */ = {
 			isa = PBXGroup;
 			children = (
@@ -308,6 +268,66 @@
 			path = Application;
 			sourceTree = "<group>";
 		};
+		F884322BFC1CA13E0BDCFC9B /* Coordinators */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Coordinators;
+			sourceTree = "<group>";
+		};
+		F88433BA13B4B85054457441 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				F8843069CD8F78AEA562EB0F /* LoginViewController.swift */,
+				F8843285CC2599AAA3E180B1 /* LoginViewModel.swift */,
+				F884367D2486E252041627A2 /* LoginModel.swift */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		F8843403CEF55AB4B160F7F1 /* Settings */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Settings;
+			sourceTree = "<group>";
+		};
+		F8843457B7ACAFF43AA270FA /* Impl */ = {
+			isa = PBXGroup;
+			children = (
+				F884396693B05BA048D106E6 /* ModuleFactoryImp.swift */,
+			);
+			path = Impl;
+			sourceTree = "<group>";
+		};
+		F884360323894F6EA8F00064 /* Auth */ = {
+			isa = PBXGroup;
+			children = (
+				F88433BA13B4B85054457441 /* Login */,
+				F884300F03FA3FE7FAC13CD9 /* SignUp */,
+			);
+			path = Auth;
+			sourceTree = "<group>";
+		};
+		F884363FDC753BA7E790EA33 /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				F8843246533EEC099C9C7A17 /* RouterProtocol.swift */,
+				F8843CE1450ABA757E1DF839 /* Router.swift */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		F8843664963EC9F36A38CBAF /* ModuleFactory */ = {
+			isa = PBXGroup;
+			children = (
+				F884365E0A6C1A49A809A203 /* AuthModuleFactory.swift */,
+				F88432CD6A93CE0F30CAD6B8 /* OnboardingModuleFactory.swift */,
+				F8843457B7ACAFF43AA270FA /* Impl */,
+			);
+			path = ModuleFactory;
+			sourceTree = "<group>";
+		};
 		F884386EC6B132BDCC50B6CC /* Sopporting Files */ = {
 			isa = PBXGroup;
 			children = (
@@ -316,6 +336,90 @@
 				C2F73F9F2882D095004CD077 /* TournamentJS-Bridging-Header.h */,
 			);
 			path = "Sopporting Files";
+			sourceTree = "<group>";
+		};
+		F88438C7E47F1F94C6D09B31 /* Scenes */ = {
+			isa = PBXGroup;
+			children = (
+				F884360323894F6EA8F00064 /* Auth */,
+				F8843403CEF55AB4B160F7F1 /* Settings */,
+			);
+			path = Scenes;
+			sourceTree = "<group>";
+		};
+		F8843A7D5C8BF2EEABFFB845 /* Coordinator */ = {
+			isa = PBXGroup;
+			children = (
+				F8843D45FC9C612B27DCA8B5 /* BaseCoordinator */,
+				F884322BFC1CA13E0BDCFC9B /* Coordinators */,
+			);
+			path = Coordinator;
+			sourceTree = "<group>";
+		};
+		F8843AA894944E8A6E4980ED /* Factory */ = {
+			isa = PBXGroup;
+			children = (
+				F8843D4753B60D2F87E0A2BD /* MainFactory */,
+				F8843664963EC9F36A38CBAF /* ModuleFactory */,
+				F88435FAA72C401B93A7BDAF /* CoordinatorFactory.swift */,
+				F88436A391060FD70D1B1566 /* VieControllerFactory.swift */,
+			);
+			path = Factory;
+			sourceTree = "<group>";
+		};
+		F8843B92E39998F293847BBE /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				F884367C05D88443B5A2FEE0 /* BaseView.swift */,
+				F8843E1A6113813C2D50605D /* Presentable.swift */,
+				F88434459FDC7E8BD1060EFD /* Coordinator.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		F8843B93FAF6B05121C34A1D /* Enums */ = {
+			isa = PBXGroup;
+			children = (
+				F884353E116983CFA5DA0EB8 /* DeepLinkOption.swift */,
+				F884308BEAAF82687A0529CA /* LaunchInstructor.swift */,
+			);
+			path = Enums;
+			sourceTree = "<group>";
+		};
+		F8843D45FC9C612B27DCA8B5 /* BaseCoordinator */ = {
+			isa = PBXGroup;
+			children = (
+				F8843B92E39998F293847BBE /* Protocols */,
+				F8843B93FAF6B05121C34A1D /* Enums */,
+				F8843EF4549CCD1AF61840EC /* Base */,
+				F8843AA894944E8A6E4980ED /* Factory */,
+				F884363FDC753BA7E790EA33 /* Router */,
+			);
+			path = BaseCoordinator;
+			sourceTree = "<group>";
+		};
+		F8843D4753B60D2F87E0A2BD /* MainFactory */ = {
+			isa = PBXGroup;
+			children = (
+				F8843FFEC731A21A07EEB140 /* Impl */,
+			);
+			path = MainFactory;
+			sourceTree = "<group>";
+		};
+		F8843EF4549CCD1AF61840EC /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				F8843FE7C907DF004BC33BE2 /* BaseCoordinator.swift */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		F8843FFEC731A21A07EEB140 /* Impl */ = {
+			isa = PBXGroup;
+			children = (
+				F884330D116D103695B2710C /* CoordinatorFactoryImpl.swift */,
+			);
+			path = Impl;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -435,15 +539,7 @@
 				F884369608DBEC822F233356 /* AppDelegate.swift in Sources */,
 				0525CDB32864B609007A6C95 /* UIStackView+ext.swift in Sources */,
 				F88431A459EE8B24A650D5FF /* SceneDelegate.swift in Sources */,
-				615B4A5720A346B4CB46EF8E /* Coordinator.swift in Sources */,
-				615B468184E708A86134E088 /* DeepLinkOption.swift in Sources */,
-				615B4C5494692926E6A56B1A /* BaseCoordinator.swift in Sources */,
-				615B472A97109D55AF999FC4 /* CoordinatorFactory.swift in Sources */,
-				615B43756262A4200F2CBA4E /* AuthModuleFactory.swift in Sources */,
 				615B4FFDCAFED95D503BB707 /* AuthCoordinatorOutput.swift in Sources */,
-				615B4A82586250D4E54151D2 /* Router.swift in Sources */,
-				615B41BED9C0499665FB2034 /* RouterImpl.swift in Sources */,
-				615B42CF6C74A066FD919005 /* OnboardingModuleFactory.swift in Sources */,
 				615B44910C719674E5944488 /* LoginController.swift in Sources */,
 				615B48A0A0C0EC189988A677 /* LoginView.swift in Sources */,
 				615B4399ECA2F245134A2A68 /* AuthCoordinator.swift in Sources */,
@@ -453,16 +549,32 @@
 				615B4A037B60668B5503DE40 /* OnboardingView.swift in Sources */,
 				615B41AA4F20F695D3A54030 /* OnboardingCoordinator.swift in Sources */,
 				615B49BF65AE8999D2342570 /* OnboardingCoordinatorOutput.swift in Sources */,
-				615B454432D32DC340A0AFDD /* CoordinatorFactoryImpl.swift in Sources */,
-				615B4D9E5035EFC1DC868830 /* ModuleFactoryImp.swift in Sources */,
 				615B4E2549762FDF0F50890A /* UIViewController+ext.swift in Sources */,
 				615B408220DF1A7F43DCD379 /* ApplicationCoordinator.swift in Sources */,
-				615B48E5D21E9687DE9F701B /* BaseView.swift in Sources */,
-				615B43A7A422B527ABAB101C /* Presentable.swift in Sources */,
 				615B43D037DFD7686E5C1DF5 /* MaterialColors.swift in Sources */,
 				615B46917CA31D960FF7577D /* UIColor+ext.swift in Sources */,
 				615B4534C3645E26350498BD /* UIView+ext.swift in Sources */,
 				615B43EC23AD164911D3C3C2 /* UITextField+ext.swift in Sources */,
+				F88434886B12E7B8A1F20A0B /* BaseView.swift in Sources */,
+				F88430F45F027560B1588317 /* Presentable.swift in Sources */,
+				F8843B15961C1B7BF5083F38 /* Coordinator.swift in Sources */,
+				F884306D7AAE9421F2F96C65 /* DeepLinkOption.swift in Sources */,
+				F8843BF024A3E2B5D4DBA4FC /* LaunchInstructor.swift in Sources */,
+				F88434AFA61642E4CC20A5EA /* BaseCoordinator.swift in Sources */,
+				F884373FFD47D7D00D1E24D8 /* CoordinatorFactoryImpl.swift in Sources */,
+				F8843F87939FECBAEE26EBB7 /* AuthModuleFactory.swift in Sources */,
+				F8843DF379DCFBDBE8898F42 /* OnboardingModuleFactory.swift in Sources */,
+				F8843E0BA62C6BA5179AF381 /* ModuleFactoryImp.swift in Sources */,
+				F88434EC76DEA9BFE7BC6625 /* RouterProtocol.swift in Sources */,
+				F8843F2F95CDB9A30693DDAB /* Router.swift in Sources */,
+				F88437A502645C58E267707F /* CoordinatorFactory.swift in Sources */,
+				F88435BD8B1F4DED052277B3 /* VieControllerFactory.swift in Sources */,
+				F8843CA0D65C003EC3EC3893 /* LoginViewController.swift in Sources */,
+				F88439D285A00F1FAD7D6A3B /* LoginViewModel.swift in Sources */,
+				F88430B7715D8673037F17ED /* LoginModel.swift in Sources */,
+				F884331058647DAAF90454FF /* SignUpViewController.swift in Sources */,
+				F88432E208B48E0FDABF9F64 /* SignUpViewModel.swift in Sources */,
+				F8843BE3A12C94C18B94D2FE /* SignUpModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
