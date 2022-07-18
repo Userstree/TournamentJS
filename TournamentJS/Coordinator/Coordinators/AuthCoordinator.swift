@@ -2,9 +2,13 @@
 // Created by Dossymkhan Zhulamanov on 16.07.2022.
 //
 
+protocol AuthCoordinatorOutput: AnyObject {
+    var finishFlow: callBack? { get set }
+}
+
 final class AuthCoordinator: BaseCoordinator, AuthCoordinatorOutput {
 
-    var finishFlow: (() -> Void)?
+    var finishFlow: callBack?
 
     private let factory: AuthModuleFactory
     private let router: RouterProtocol

@@ -11,5 +11,5 @@ protocol CoordinatorFactory {
 }
 
 protocol CoordinatorFactoryProtocol {
-    func makeAuthCoordinatorBox(router: RouterProtocol, coordinatorFactory: CoordinatorFactory, viewControllerFacory: )
+    func makeAuthCoordinatorBox(router: RouterProtocol, coordinatorFactory: CoordinatorFactory, viewControllerFacory: ViewControllerFactory)
 }

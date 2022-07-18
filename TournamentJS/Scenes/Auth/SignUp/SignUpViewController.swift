@@ -6,5 +6,6 @@ protocol SignUpViewControllerProtocol {
     var onSignUp: (() -> Void)? { get set }
 }
 
-class SignUpViewController: UIViewController {
+class SignUpViewController: UIViewController, SignUpViewControllerProtocol {
+
 }
