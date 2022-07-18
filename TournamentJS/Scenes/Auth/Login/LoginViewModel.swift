@@ -2,13 +2,11 @@
 // Created by Dossymkhan Zhulamanov on 18.07.2022.
 //
 
-protocol LoginViewModelProtocol: ViewModel {
+protocol LoginViewModelProtocol {
 
 }
 
 class LoginViewModel: NSObject, LoginViewModelProtocol {
-
-    typealias Services = NetworkingService
 
     // MARK: - Init
 
@@ -16,8 +14,4 @@ class LoginViewModel: NSObject, LoginViewModelProtocol {
         super.init()
     }
 
-    required init(withServices services: Services) {
-        super.init()
-
-    }
 }

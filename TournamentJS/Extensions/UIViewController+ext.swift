@@ -3,9 +3,9 @@
 //
 
 
-public extension UIViewController {
-    static func instantiate() -> Self.Type {
-        let viewController = Self
-        return viewController
-    }
-}
+//public extension UIViewController {
+//    static func instantiate() -> Self.Type {
+//        let viewController = Self
+//        return viewController
+//    }
+//}

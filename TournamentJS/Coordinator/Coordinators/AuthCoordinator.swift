@@ -2,43 +2,51 @@
 // Created by Dossymkhan Zhulamanov on 16.07.2022.
 //
 
-protocol AuthCoordinatorOutput: AnyObject {
-    var finishFlow: callBack? { get set }
-}
+final class AuthCoordinator: BaseCoordinator, CoordinatorFinishOutput {
 
-final class AuthCoordinator: BaseCoordinator, AuthCoordinatorOutput {
+    // MARK: - CoordinatorFinishOutput
 
     var finishFlow: callBack?
 
-    private let factory: AuthModuleFactory
-    private let router: RouterProtocol
-    private weak var signUpView: SignUpView?
+    // MARK: - Vars & Lets
 
-    init(router: RouterProtocol, factory: AuthModuleFactory) {
-        self.factory = factory
-        self.router = router
-    }
+    private let coordinatorFactory: CoordinatorFactoryProtocol
+    private let router: RouterProtocol
+    private let viewControllerFactory: ViewControllerFactory
+
+    // MARK: - Coordinator
 
     override func start() {
-        showLogin()
+        showLoginViewController()
     }
 
-    private func showLogin() {
-        let loginOutput = factory.makeLoginOutput()
-        loginOutput.onCompleteAuth = { [weak self] in
+    // MARK: - Private Methods
+
+    private func showLoginViewController() {
+        let loginViewController = viewControllerFactory.instantiateLoginViewController()
+        loginViewController.onLogin = { [weak self] in
             self?.finishFlow?()
         }
-        loginOutput.onSignUpButtonTap = { [weak self] in
-            self?.showSignUp()
+        loginViewController.onSignUp = { [weak self] in
+            self?.showSignUpViewController()
         }
-        router.setRootModule(loginOutput)
+        router.setRootModule(loginViewController, hideBar: true)
     }
 
-    private func showSignUp() {
-        signUpView = factory.makeSignUpHandler()
-        signUpView?.onSignUpComplete = { [weak self] in
+    private func showSignUpViewController() {
+        let signUpViewController = viewControllerFactory.instantiateSignUpViewController()
+        signUpViewController.onSignUp = { [weak self] in
             self?.finishFlow?()
         }
-        router.push(signUpView)
+        router.push(signUpViewController)
+    }
+
+    // MARK: - Init
+
+    init(router: RouterProtocol, coordinatorFactory: CoordinatorFactoryProtocol, viewControllerFactory: ViewControllerFactory) {
+        self.coordinatorFactory = coordinatorFactory
+        self.router = router
+        self.viewControllerFactory = viewControllerFactory
+        super.init()
     }
 }

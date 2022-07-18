@@ -11,7 +11,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
     var window: UIWindow?
     var rootController: UINavigationController!
 
-    private lazy var applicationCoordinator: Coordinator = self.makeCoordinator()
+    private lazy var applicationCoordinator: Coordinator = makeCoordinator()
 
     func scene(_ scene: UIScene, willConnectTo session: UISceneSession, options connectionOptions: UIScene.ConnectionOptions) {
         guard let windowScene = (scene as? UIWindowScene) else {
@@ -23,16 +23,14 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         self.rootController = rootController
         window.makeKeyAndVisible()
         self.window = window
+        applicationCoordinator.start(with: nil)
 //        let notification = connectionOptions.notificationResponse as? [String: Any]
 //        let deepLink = DeepLinkOption.build(with: notification)
-        applicationCoordinator.start(with: .onboarding)
+//        applicationCoordinator.start(with: .onboarding)
     }
 
     private func makeCoordinator() -> Coordinator {
-        ApplicationCoordinator(
-                router: Router(rootController: rootController),
-                coordinatorFactory: CoordinatorFactoryImp()
-        )
+        ApplicationCoordinator(router: Router(rootController: rootController), coordinatorFactory: CoordinatorFactory())
     }
 
     func sceneDidDisconnect(_ scene: UIScene) {

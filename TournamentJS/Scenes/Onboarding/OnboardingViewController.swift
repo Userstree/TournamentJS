@@ -12,11 +12,17 @@ protocol OnboardingViewControllerProtocol {
 
 class OnboardingViewController: UIViewController, OnboardingViewControllerProtocol {
 
+    // MARK: - OnboardingViewModelProtocol
+
+    var viewModel: OnboardingViewModelProtocol?
+
     // MARK: - OnboardingViewControllerProtocol
 
     var onSkip: callBack? = {
+
     }
     var onGetstarted: callBack? = {
+
     }
 
     // MARK: - Vars & Lets
@@ -124,15 +130,17 @@ class OnboardingViewController: UIViewController, OnboardingViewControllerProtoc
     // MARK: - Actions
 
     @objc private func skipButtonTapped() {
-        onFinish?()
+        onSkip?()
+//        onFinish?()
     }
 
-    // MARK: - Configuration of the View
+    // MARK: - Configuring the Views
 
     private func configureViews() {
         [paperOnboarding, getStartedButton].forEach(view.addSubview)
         makeConstraints()
     }
+
     private func makeConstraints() {
         paperOnboarding.snp.makeConstraints {
             $0.edges.equalTo(view.snp.edges)
@@ -143,6 +151,8 @@ class OnboardingViewController: UIViewController, OnboardingViewControllerProtoc
         }
     }
 }
+
+// MARK: - PaperOnboardingDataSource
 
 extension OnboardingViewController: PaperOnboardingDataSource {
     func onboardingItemsCount() -> Int {
@@ -163,6 +173,8 @@ extension OnboardingViewController: PaperOnboardingDataSource {
         onboardingIndicatorColors[index]
     }
 }
+
+// MARK: - PaperOnboardingDelegate
 
 extension OnboardingViewController: PaperOnboardingDelegate {
     public func onboardingConfigurationItem(_ item: OnboardingContentViewItem, index: Int) {

@@ -6,16 +6,19 @@ fileprivate var onboardingWasShown = false
 fileprivate var isAuthorized = false
 
 enum LaunchInstructor {
-    case main, auth, onboarding
+//    case main
+    case auth, onboarding
 
     static func configure(
-            tutorialWasShown: Bool = onboardingWasShown,
+            onboardingWasShown: Bool = onboardingWasShown,
             isAutorized: Bool = isAuthorized
     ) -> LaunchInstructor {
-        switch (tutorialWasShown, isAutorized) {
-        case (true, false), (false, false): return .auth
-        case (false, true): return .onboarding
-        case (true, true): return .main
+        switch (onboardingWasShown, isAutorized) {
+        case (false, false): return .onboarding
+        case (true, false): return .auth
+//        case (true, true): return .main
+        case (false, true), (true, true):
+            return .onboarding
         }
     }
 }

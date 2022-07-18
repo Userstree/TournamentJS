@@ -3,7 +3,7 @@
 //
 
 
-protocol AuthModuleFactory {
-    func makeLoginOutput() -> LoginView
-    func makeSignUpHandler() -> SignUpView
-}
+//protocol AuthModuleFactory {
+//    func makeLoginOutput() -> LoginView
+//    func makeSignUpHandler() -> SignUpView
+//}

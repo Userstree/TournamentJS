@@ -6,7 +6,7 @@ protocol OnboardingViewModelProtocol {
 
 }
 
-class OnboardingViewModel: NSObject, OnboardingViewModel {
+class OnboardingViewModel: NSObject, OnboardingViewModelProtocol {
 
 
     // MARK: - Init

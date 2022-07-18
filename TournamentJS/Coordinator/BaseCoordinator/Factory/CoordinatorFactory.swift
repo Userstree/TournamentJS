@@ -2,14 +2,19 @@
 // Created by Dossymkhan Zhulamanov on 16.07.2022.
 //
 
-protocol CoordinatorFactory {
-
-    func makeAuthCoordinatorBox(router: RouterProtocol) -> Coordinator & AuthCoordinatorOutput
-    func makeOnboardingCoordinator(router: RouterProtocol) -> Coordinator & OnboardingCoordinatorOutput
-    func makeSettingsCoordinator() -> Coordinator
-    func makeSettingsCoordinator(navController: UINavigationController?) -> Coordinator
-}
 
 protocol CoordinatorFactoryProtocol {
-    func makeAuthCoordinatorBox(router: RouterProtocol, coordinatorFactory: CoordinatorFactory, viewControllerFacory: ViewControllerFactory)
+    func makeAuthCoordinatorBox(router: RouterProtocol, coordinatorFactory: CoordinatorFactoryProtocol, viewControllerFactory: ViewControllerFactory) -> AuthCoordinator
+    func makeOnboardingCoordinatorBox(router: RouterProtocol, viewControllerFactory: ViewControllerFactory) -> OnboardingCoordinator
+//    func makeMainCoordinatorBox(router: RouterProtocol, coordinatorFactory: CoordinatorFactory, viewControllerFactory: ViewControllerFactory) ->
+}
+
+class CoordinatorFactory: CoordinatorFactoryProtocol {
+    func makeAuthCoordinatorBox(router: RouterProtocol, coordinatorFactory: CoordinatorFactoryProtocol, viewControllerFactory: ViewControllerFactory) -> AuthCoordinator {
+        AuthCoordinator(router: router, coordinatorFactory: coordinatorFactory, viewControllerFactory: viewControllerFactory)
+    }
+
+    func makeOnboardingCoordinatorBox(router: RouterProtocol, viewControllerFactory: ViewControllerFactory) -> OnboardingCoordinator {
+        OnboardingCoordinator(router: router, viewControllerFactory: viewControllerFactory)
+    }
 }

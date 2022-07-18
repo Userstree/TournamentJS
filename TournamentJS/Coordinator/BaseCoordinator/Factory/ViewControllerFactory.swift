@@ -6,11 +6,19 @@
 class ViewControllerFactory{
     func instantiateLoginViewController() -> LoginViewController {
         let loginViewController = LoginViewController()
-        loginViewController.viewModel = LoginViewModelProtocol
+        loginViewController.viewModel = LoginViewModel()
         return loginViewController
     }
 
-//    func instantiateOnboardingViewController() ->  {
-//        let
-//    }
+    func instantiateOnboardingViewController() -> OnboardingViewController {
+        let onboardingViewController = OnboardingViewController()
+        onboardingViewController.viewModel = OnboardingViewModel()
+        return onboardingViewController
+    }
+
+    func instantiateSignUpViewController() -> SignUpViewController {
+        let signUpViewController = SignUpViewController()
+        signUpViewController.viewModel = SignUpViewModel()
+        return signUpViewController
+    }
 }

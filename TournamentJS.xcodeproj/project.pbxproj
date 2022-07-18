@@ -10,8 +10,9 @@
 		0525CDB32864B609007A6C95 /* UIStackView+ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0525CDB22864B609007A6C95 /* UIStackView+ext.swift */; };
 		05A545822864B4140089FABB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 05A545802864B4140089FABB /* LaunchScreen.storyboard */; };
 		3CB0CCBD1D42789450B865E2 /* Pods_TournamentJS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BF1332EBAF0E0C0BEB69AC5C /* Pods_TournamentJS.framework */; };
-		615B408220DF1A7F43DCD379 /* ApplicationCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 615B4F759B74025A03F6142A /* ApplicationCoordinator.swift */; };
-		615B41AA4F20F695D3A54030 /* OnboardingCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 615B4445B32F5D0922403730 /* OnboardingCoordinator.swift */; };
+		615B425EE683C0925B758BA0 /* ApplicationCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 615B428C3EEC6956F526B85F /* ApplicationCoordinator.swift */; };
+		615B4300B2189B38CEC81AD7 /* OnboardingCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 615B409B0449861C2F6C4B7A /* OnboardingCoordinator.swift */; };
+		615B431B132E94EC1944C0E8 /* AuthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 615B489D0D01DB84D8A3649F /* AuthViewController.swift */; };
 		615B43EC23AD164911D3C3C2 /* UITextField+ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 615B4AB177FD6520856D7A11 /* UITextField+ext.swift */; };
 		615B44910C719674E5944488 /* LoginController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 615B4ACF4157E44052B6BA80 /* LoginController.swift */; };
 		615B4534C3645E26350498BD /* UIView+ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 615B40DF46976A0631A1A089 /* UIView+ext.swift */; };
@@ -19,10 +20,10 @@
 		615B46EEB3A55A726A24FAEB /* SignUpView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 615B40E05C9293EA1BCDF79C /* SignUpView.swift */; };
 		615B48A0A0C0EC189988A677 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 615B4A268B53D786079E02C7 /* LoginView.swift */; };
 		615B497013E179BAAE83FAC1 /* SignUpController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 615B4F65CA36C95CEF43E6BA /* SignUpController.swift */; };
-		615B49BF65AE8999D2342570 /* OnboardingCoordinatorOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 615B46484484E47F3A2DF22C /* OnboardingCoordinatorOutput.swift */; };
 		615B4A037B60668B5503DE40 /* OnboardingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 615B411252A6264915D7AC98 /* OnboardingView.swift */; };
 		615B4C310993C48969F40A10 /* OnboardingController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 615B4C991F2512E0BB31DCB2 /* OnboardingController.swift */; };
 		615B4E2549762FDF0F50890A /* UIViewController+ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 615B43664D9AF810A3A7AD77 /* UIViewController+ext.swift */; };
+		615B4FBEC9F7BE9665F0612C /* CoordinatorFinishOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 615B4471030EC4DAE34CEFB4 /* CoordinatorFinishOutput.swift */; };
 		F884301AFE2915CC94DA5F11 /* MaterialColors.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8843B6630A01CAEE0DA6FE6 /* MaterialColors.swift */; };
 		F884306D7AAE9421F2F96C65 /* DeepLinkOption.swift in Sources */ = {isa = PBXBuildFile; fileRef = F884353E116983CFA5DA0EB8 /* DeepLinkOption.swift */; };
 		F88430B7715D8673037F17ED /* LoginModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F884367D2486E252041627A2 /* LoginModel.swift */; };
@@ -59,19 +60,20 @@
 		05A545722864B4140089FABB /* TournamentJS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TournamentJS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		05A545812864B4140089FABB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5F8B225B79CA0D658D01542E /* Pods-TournamentJS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TournamentJS.debug.xcconfig"; path = "Target Support Files/Pods-TournamentJS/Pods-TournamentJS.debug.xcconfig"; sourceTree = "<group>"; };
+		615B409B0449861C2F6C4B7A /* OnboardingCoordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OnboardingCoordinator.swift; sourceTree = "<group>"; };
 		615B40DF46976A0631A1A089 /* UIView+ext.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+ext.swift"; sourceTree = "<group>"; };
 		615B40E05C9293EA1BCDF79C /* SignUpView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignUpView.swift; sourceTree = "<group>"; };
 		615B411252A6264915D7AC98 /* OnboardingView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OnboardingView.swift; sourceTree = "<group>"; };
+		615B428C3EEC6956F526B85F /* ApplicationCoordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ApplicationCoordinator.swift; sourceTree = "<group>"; };
 		615B43664D9AF810A3A7AD77 /* UIViewController+ext.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIViewController+ext.swift"; sourceTree = "<group>"; };
-		615B4445B32F5D0922403730 /* OnboardingCoordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OnboardingCoordinator.swift; sourceTree = "<group>"; };
-		615B46484484E47F3A2DF22C /* OnboardingCoordinatorOutput.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OnboardingCoordinatorOutput.swift; sourceTree = "<group>"; };
+		615B4471030EC4DAE34CEFB4 /* CoordinatorFinishOutput.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoordinatorFinishOutput.swift; sourceTree = "<group>"; };
+		615B489D0D01DB84D8A3649F /* AuthViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthViewController.swift; sourceTree = "<group>"; };
 		615B48A70D3A00AA763E1051 /* UIColor+ext.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor+ext.swift"; sourceTree = "<group>"; };
 		615B4A268B53D786079E02C7 /* LoginView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 		615B4AB177FD6520856D7A11 /* UITextField+ext.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UITextField+ext.swift"; sourceTree = "<group>"; };
 		615B4ACF4157E44052B6BA80 /* LoginController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginController.swift; sourceTree = "<group>"; };
 		615B4C991F2512E0BB31DCB2 /* OnboardingController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OnboardingController.swift; sourceTree = "<group>"; };
 		615B4F65CA36C95CEF43E6BA /* SignUpController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignUpController.swift; sourceTree = "<group>"; };
-		615B4F759B74025A03F6142A /* ApplicationCoordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ApplicationCoordinator.swift; sourceTree = "<group>"; };
 		BF1332EBAF0E0C0BEB69AC5C /* Pods_TournamentJS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TournamentJS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C2F73F9F2882D095004CD077 /* TournamentJS-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "TournamentJS-Bridging-Header.h"; path = "TournamentJS/Sopporting Files/TournamentJS-Bridging-Header.h"; sourceTree = SOURCE_ROOT; };
 		F8843069CD8F78AEA562EB0F /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
@@ -185,8 +187,6 @@
 			isa = PBXGroup;
 			children = (
 				615B45FE06E052F06ECF7DC9 /* Controllers */,
-				615B4445B32F5D0922403730 /* OnboardingCoordinator.swift */,
-				615B46484484E47F3A2DF22C /* OnboardingCoordinatorOutput.swift */,
 			);
 			path = OnboardingFlow;
 			sourceTree = "<group>";
@@ -259,7 +259,6 @@
 			children = (
 				F8843F486748C463CB59F0D5 /* AppDelegate.swift */,
 				F884391A0C34184313162B1D /* SceneDelegate.swift */,
-				615B4F759B74025A03F6142A /* ApplicationCoordinator.swift */,
 			);
 			path = Application;
 			sourceTree = "<group>";
@@ -268,6 +267,8 @@
 			isa = PBXGroup;
 			children = (
 				F8843CBBFA26DB262CBB95BA /* AuthCoordinator.swift */,
+				615B409B0449861C2F6C4B7A /* OnboardingCoordinator.swift */,
+				615B428C3EEC6956F526B85F /* ApplicationCoordinator.swift */,
 			);
 			path = Coordinators;
 			sourceTree = "<group>";
@@ -318,6 +319,7 @@
 			children = (
 				F88433BA13B4B85054457441 /* Login */,
 				F884300F03FA3FE7FAC13CD9 /* SignUp */,
+				615B489D0D01DB84D8A3649F /* AuthViewController.swift */,
 			);
 			path = Auth;
 			sourceTree = "<group>";
@@ -398,6 +400,7 @@
 				F8843E1A6113813C2D50605D /* Presentable.swift */,
 				F88434459FDC7E8BD1060EFD /* Coordinator.swift */,
 				F884391E212AE54CAC6893E9 /* ViewModelBased.swift */,
+				615B4471030EC4DAE34CEFB4 /* CoordinatorFinishOutput.swift */,
 			);
 			path = Protocols;
 			sourceTree = "<group>";
@@ -570,10 +573,7 @@
 				615B46EEB3A55A726A24FAEB /* SignUpView.swift in Sources */,
 				615B4C310993C48969F40A10 /* OnboardingController.swift in Sources */,
 				615B4A037B60668B5503DE40 /* OnboardingView.swift in Sources */,
-				615B41AA4F20F695D3A54030 /* OnboardingCoordinator.swift in Sources */,
-				615B49BF65AE8999D2342570 /* OnboardingCoordinatorOutput.swift in Sources */,
 				615B4E2549762FDF0F50890A /* UIViewController+ext.swift in Sources */,
-				615B408220DF1A7F43DCD379 /* ApplicationCoordinator.swift in Sources */,
 				615B46917CA31D960FF7577D /* UIColor+ext.swift in Sources */,
 				615B4534C3645E26350498BD /* UIView+ext.swift in Sources */,
 				615B43EC23AD164911D3C3C2 /* UITextField+ext.swift in Sources */,
@@ -603,6 +603,10 @@
 				F8843F110BC459FF1936A5A0 /* NetworkingService.swift in Sources */,
 				F8843C01F779DF5334B6517A /* OnboardingViewController.swift in Sources */,
 				F88435A7827F6711B0D535C0 /* OnboardingViewModel.swift in Sources */,
+				615B431B132E94EC1944C0E8 /* AuthViewController.swift in Sources */,
+				615B4FBEC9F7BE9665F0612C /* CoordinatorFinishOutput.swift in Sources */,
+				615B4300B2189B38CEC81AD7 /* OnboardingCoordinator.swift in Sources */,
+				615B425EE683C0925B758BA0 /* ApplicationCoordinator.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
