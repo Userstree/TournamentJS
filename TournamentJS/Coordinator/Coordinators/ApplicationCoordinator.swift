@@ -34,10 +34,11 @@ final class ApplicationCoordinator: BaseCoordinator {
     // MARK: - Private Methods
 
     private func runAuthFlow() {
+        print("in auth")
         let coordinator = coordinatorFactory.makeAuthCoordinatorBox(router: router, coordinatorFactory: coordinatorFactory, viewControllerFactory: viewControllerFactory)
         coordinator.finishFlow = { [unowned self, unowned coordinator] in
             self.removeDependency(coordinator)
-            self.launchInstructor = LaunchInstructor.configure(onboardingWasShown: true, isAutorized: false)
+            self.launchInstructor = LaunchInstructor.configure(onboardingWasShown: true, isAutorized: true)
             self.start()
         }
         addDependency(coordinator)
@@ -48,7 +49,7 @@ final class ApplicationCoordinator: BaseCoordinator {
         let coordinator = coordinatorFactory.makeOnboardingCoordinatorBox(router: router, viewControllerFactory: viewControllerFactory)
         coordinator.finishFlow = { [unowned self, unowned coordinator] in
             self.removeDependency(coordinator)
-            self.launchInstructor = LaunchInstructor.configure(onboardingWasShown: true, isAutorized: true)
+            self.launchInstructor = LaunchInstructor.configure(onboardingWasShown: true, isAutorized: false)
             self.start()
         }
         addDependency(coordinator)

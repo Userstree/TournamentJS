@@ -10,6 +10,7 @@ class OnboardingCoordinator: BaseCoordinator, CoordinatorFinishOutput {
 
     // MARK: - Vars & Lets
 
+//    private let coordinatorFactory: CoordinatorFactoryProtocol
     private let viewControllerFactory: ViewControllerFactory
     private let router: RouterProtocol
 
