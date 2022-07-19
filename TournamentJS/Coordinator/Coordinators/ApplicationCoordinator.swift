@@ -34,7 +34,6 @@ final class ApplicationCoordinator: BaseCoordinator {
     // MARK: - Private Methods
 
     private func runAuthFlow() {
-        print("in auth")
         let coordinator = coordinatorFactory.makeAuthCoordinatorBox(router: router, coordinatorFactory: coordinatorFactory, viewControllerFactory: viewControllerFactory)
         coordinator.finishFlow = { [unowned self, unowned coordinator] in
             self.removeDependency(coordinator)
@@ -69,4 +68,5 @@ final class ApplicationCoordinator: BaseCoordinator {
         self.router = router
         self.coordinatorFactory = coordinatorFactory
     }
+
 }

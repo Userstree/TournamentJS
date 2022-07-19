@@ -24,21 +24,26 @@ final class AuthCoordinator: BaseCoordinator, CoordinatorFinishOutput {
 
     private func showLoginViewController() {
         let loginViewController = viewControllerFactory.instantiateLoginViewController()
-        loginViewController.onLogin = { [weak self] in
-            self?.finishFlow?()
+        loginViewController.onLogin = { [unowned self] in
+            self.finishFlow?()
         }
-        loginViewController.onSignUp = { [weak self] in
-            self?.showSignUpViewController()
+        loginViewController.onSignUp = { [unowned self] in
+            self.showSignUpViewController()
         }
-        router.setRootModule(loginViewController, hideBar: true)
+        router.setRootModule(loginViewController, hideBar: false)
     }
 
     private func showSignUpViewController() {
         let signUpViewController = viewControllerFactory.instantiateSignUpViewController()
-        signUpViewController.onSignUp = { [weak self] in
-            self?.finishFlow?()
+        signUpViewController.onSignUp = { [unowned self] in
+            self.finishFlow?()
         }
         router.push(signUpViewController)
+    }
+
+    private func showForgetPassword(module: LoginViewController) {
+//        let coordiantor = coordinatorFactory
+
     }
 
     // MARK: - Init
@@ -49,4 +54,5 @@ final class AuthCoordinator: BaseCoordinator, CoordinatorFinishOutput {
         self.viewControllerFactory = viewControllerFactory
         super.init()
     }
+
 }

@@ -2,13 +2,11 @@
 // Created by Dossymkhan Zhulamanov on 16.07.2022.
 //
 
-class OnboardingCoordinator: BaseCoordinator, CoordinatorFinishOutput {
+final class OnboardingCoordinator: BaseCoordinator, CoordinatorFinishOutput {
 
     // MARK: - CoordinatorFinishOutput
 
     var finishFlow: (() -> Void)?
-
-    // MARK: - Vars & Lets
 
 //    private let coordinatorFactory: CoordinatorFactoryProtocol
     private let viewControllerFactory: ViewControllerFactory
@@ -17,12 +15,12 @@ class OnboardingCoordinator: BaseCoordinator, CoordinatorFinishOutput {
     // MARK: - Coordinator
 
     override func start() {
-        showOnboarding()
+        showOnboardingViewController()
     }
 
     // MARK: - Private Methods
 
-    private func showOnboarding() {
+    private func showOnboardingViewController() {
         let onBoardingViewController = viewControllerFactory.instantiateOnboardingViewController()
         onBoardingViewController.onSkip = { [weak self] in
             self?.finishFlow?()
@@ -37,4 +35,5 @@ class OnboardingCoordinator: BaseCoordinator, CoordinatorFinishOutput {
         self.router = router
         super.init()
     }
+
 }

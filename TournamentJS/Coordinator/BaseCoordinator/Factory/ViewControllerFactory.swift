@@ -4,6 +4,7 @@
 
 
 class ViewControllerFactory{
+
     func instantiateLoginViewController() -> LoginViewController {
         let loginViewController = LoginViewController()
         loginViewController.viewModel = LoginViewModel()
@@ -21,4 +22,13 @@ class ViewControllerFactory{
         signUpViewController.viewModel = SignUpViewModel()
         return signUpViewController
     }
+
+    func instantiateChangePasswordStep1VC() -> ChangePasswordStep1ViewController {
+
+    }
+
+    func instantiateChangePasswordStep2VC() -> ChangePasswordStep2ViewController {
+
+    }
+
 }

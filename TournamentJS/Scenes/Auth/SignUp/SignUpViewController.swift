@@ -107,6 +107,7 @@ class SignUpViewController: UIViewController, SignUpViewControllerProtocol, UITe
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        view.backgroundColor = MaterialColors.background.value
         configureViews()
     }
 
@@ -118,21 +119,27 @@ class SignUpViewController: UIViewController, SignUpViewControllerProtocol, UITe
          emailTextField,
          passwordTextField,
          signUpButton,
+         moveToSignInScreenButton,
         ].forEach(view.addSubview)
         makeConstraints()
     }
     private func makeConstraints(){
         imageView.snp.makeConstraints {
             $0.leading.equalTo(view.snp.leading).offset(16)
-            $0.top.equalTo(view.snp.top).offset(200)
+            $0.top.equalTo(view.snp.top).offset(180)
             $0.size.equalTo(CGSize(width: 96, height: 96))
         }
         imageLabel.snp.makeConstraints{
             $0.leading.equalTo(imageView.snp.trailing).offset(4)
             $0.centerY.equalTo(imageView.snp.centerY)
         }
-        emailTextField.snp.makeConstraints {
+        nameTextField.snp.makeConstraints{
             $0.top.equalTo(imageView.snp.bottom).offset(16)
+            $0.leading.equalTo(view.snp.leading).offset(20)
+            $0.width.equalTo(245)
+        }
+        emailTextField.snp.makeConstraints {
+            $0.top.equalTo(nameTextField.snp.bottom).offset(32)
             $0.leading.equalTo(view.snp.leading).offset(20)
             $0.width.equalTo(245)
         }
